@@ -1,0 +1,306 @@
+@font-face {font-family: 'millgary';src:url('https://dl.dropbox.com/scl/fi/qf7e2hpbpawq9bi8ev329/Millgary-Personal-Use.otf?rlkey=7lwdslqtg7qy0n379knemx4gc&st=bitpq8ub&dl=0');}
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Commissioner&family=DM+Serif+Text:ital@0;1&family=Source+Serif+4:ital,opsz@0,8..60;1,8..60&display=swap');
+
+
+.jnpmcose-box {
+  width: 100%;                  
+  max-width: 1000px;             
+  margin: auto;                      
+  border: 1px solid #333;
+  background-color: #fff;
+  color: #000;
+  position: relative;
+  display: block;
+  box-sizing: border-box;      
+}
+  
+  .jnpmcose-site-header .jnpmcose-top-bar {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: "Commissioner", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0,
+      "FLAR" 0,
+      "VOLM" 0;
+      font-size: 12px;
+  }
+  
+  .jnpmcose-topbar {
+    background: #ddd;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    font-size: 13px;
+  }
+  
+  .jnpmcose-top-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0efe9;
+    padding: 10px 20px;
+    border-bottom: 1px solid #111;
+  }
+  
+  .jnpmcose-menu-items {
+    justify-content: center;
+    gap: 20px;
+    font-size: 13px;
+    color: #222;
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .jnpmcose-menu-items span {
+    padding: 4px 8px;
+    border-left: 1px solid #ccc;
+  }
+  
+  .jnpmcose-menu-items span:first-child {
+    border-left: none;
+  }
+  
+  
+  .jnpmcose-menu-container {
+    display: flex;                
+    justify-content: space-between; 
+    align-items: center;          
+    padding: 20 20px;
+    border-bottom: 1px solid #111;
+  }
+  
+  .jnpmcose-menu-title {
+    font-family: 'Against';
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 0;
+  }
+  
+  .jnpmcose-menu-blog button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 6px 20px;
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .jnpmcose-btn-link {
+    text-decoration: none;
+  }
+  
+  .jnpmcose-layout {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 20px;
+  }
+  
+  .jnpmcose-left-panel {
+    display: flex;
+    flex: 2;
+  }
+  
+  .jnpmcose-logo-box {
+    border: 1px solid #000;
+    font-family: 'millgary';
+    font-size: 35px;
+    font-weight: bold;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    padding: 40px 10px;
+    text-align: center;
+    background: #fff;
+    height: 220px;
+    min-width: 60px;
+    max-width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .jnpmcose-left-content {
+    margin-left: 24px;
+    flex: 1;
+  }
+  
+  .jnpmcose-section-box {
+    border: 1px solid #000;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    margin-left: -5px;
+    background: #fff;
+  }
+  
+  .jnpmcose-section-box h2 {
+    font-family: 'Against';
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .jnpmcose-subtitle {
+    margin-top: -8px;
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: -2px;
+  }
+  
+  .jnpmcose-label-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  
+  .jnpmcose-label {
+    border: 1px solid #000;
+    color: #000;
+    padding: 5px 12px;
+    font-weight: bold;
+    background: #fff;
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    box-sizing: border-box;      
+  }
+  
+  .jnpmcose-desc {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    font-family: "Bai Jamjuree";
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .jnpmcose-right-panel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .jnpmcose-profile-img {
+    max-width: 250px;
+    max-height: 370px;
+    box-sizing: border-box;      
+    border: 1px solid #000;
+    width: 100%;
+    overflow: hidden;  
+    object-fit: cover;      
+    display: block;
+  }  
+  
+  .jnpmcose-couleurs {
+    padding: 30px;
+    text-align: left;
+    margin-top: -110px;
+  }
+  
+  .jnpmcose-couleurs h2 {
+    font-family: 'millgary';
+    font-size: 28px;
+    margin-bottom: -15px;
+  }
+  
+  .jnpmcose-subone {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+    
+  .jnpmcose-sub {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    margin-bottom: 24px;
+  }
+  
+  .jnpmcose-couleur-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    box-sizing: border-box;      
+  }
+
+
+  .jnpmcose-link-box {
+    text-decoration: none;  
+    display: inline-block;  
+  }
+  
+  .jnpmcose-c-box {
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    width: 150px;
+    height: 126px;    
+    border: 1px solid #000;
+    padding: 16px;
+    color: #000;
+    background: #fff;
+    cursor: pointer;
+    line-height: 1;
+  }
+  
+  .jnpmcose-c-box.dark {
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+
+
+  .jnpmcose-c-boxtt {
+    width: 180px; 
+    padding: 16px;
+    height: 160px;            
+    border: 1px solid #000;              
+    background: #fff;
+    overflow: hidden;                     
+    box-sizing: border-box;
+    justify-content: center;
+  }
+  
+  .jnpmcose-c-boxtt img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;         
+    display: block;
+  }
+  
+  .jnpmcose-c-box h3 {
+    font-family: 'Against';
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+  
+  .jnpmcose-c-box h3 span {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+  }
+  
