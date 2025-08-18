@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+
+.jnz-polaroidlove-bg {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-size: cover;      
+  background-position: center;  
+  background-repeat: no-repeat; 
+}
+
+
+.jnz-polaroidlove-center-wrapper {
+    display: flex;
+    justify-content: center;  
+    align-items: center;       
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .jnz-polaroidlove-jnz-prolar-box {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+
+
+.jnz-polaroidlove-title {
+    font-family: 'Calora';
+    font-size: 85px;
+    text-align: center;
+    margin-top: 100px;
+    color: var(--ppyltext);
+  }
+
+
+  .jnz-polaroidlove-subtitle {
+    font-size: 45px;
+    color: var(--ppylsubt);
+    margin-top: -65px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'Modern 20';
+    font-style: italic;
+  }
+
+
+  .jnz-polaroidlove-quote2d {
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: #444;
+    margin-bottom: 30px;
+    margin-top: -40px;
+  }
+
+
+  .jnz-polaroidlove-image-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .jnz-polaroidlove-stacked-images {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 5px;
+    position: relative;
+  }
+  
+  .jnz-polaroidlove-stacked-images img,
+  .img:first-child {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    display: block;
+  }
+  
+
+
+  .jnz-polaroidlove-image-with-polaroid {
+    position: relative;
+  }
+  
+
+
+  .jnz-polaroidlove-main-polaroid {
+    position: absolute;
+    top: -20px;
+    left: 50px;
+    transform: rotate(10deg);
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    padding: 10px 10px 30px; 
+    box-shadow: 0 4px 12px #00000033;
+    object-fit: cover;
+    z-index: 2;
+  }
+
+
+.jnz-polaroidlove-quote-boxes {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+
+.jnz-polaroidlove-quote {
+  font-family: "Source Serif 4", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  border: 1px solid var(--ppylborder);
+  padding: 20px;
+  font-size: 12px;
+  max-width: 300px;
+  color: var(--ppyltext);
+}
+
+
+.jnz-polaroidlove-items {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+
+.jnz-polaroidlove-item {
+  border: 1px solid var(--ppylborder);
+  padding: 10px 10px 30px; 
+  background-color: #ffffff;
+}
+
+
+.jnz-polaroidlove-item img {
+  width: 80px;
+  border: 1px solid var(--ppylborder);
+  height: 80px;
+}
+
+
+.jnz-polaroidlove-vv {
+  font-family: "Source Serif 4", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 12px;
+  margin-bottom: -35px;
+  color: var(--ppyltext);
+}
+
+
+.jnz-polaroidlove-vvvz {
+  font-family: "Source Serif 4", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 12px;
+  margin-top: -35px;
+  color: var(--ppyltext);
+}
+
+
+.jnz-polaroidlove-line {
+  width: 96%;
+  height: 0.5px;
+  background-color: var(--ppylline);
+  margin: 20px auto;  
+}
+
+
+.jnz-polaroidlove-linevvz {
+  width: 96%;
+  height: 0.5px;
+  background-color: var(--ppylline);
+  margin: 20px auto;  
+}
