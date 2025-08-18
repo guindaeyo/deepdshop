@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Luxurious+Script&family=Mea+Culpa&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+.mymy-uuiiaa-box {
+  text-align: center;
+  margin: 5px auto;
+  background: var(--mmbackg);
+  border: 1px solid var(--mmborder);
+  max-width: 700px;
+  width: 100%;
+  padding: 20px;
+  outline-offset: -10px;
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+}
+
+
+.uuiiaamymy-main-container {
+    max-width: 550px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+
+
+  .uuiiaamymy-subtitle {
+    font-size: 15px;
+    margin-bottom: -50px;
+    margin-top: 30px;
+    font-family: "Unna", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--minitext);
+  }
+  
+  .uuiiaamymy-name {
+    font-size: 48px;
+    margin: 10px 0;
+    font-family: "Luxurious Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--mmnamez);
+
+
+  }
+  
+  .uuiiaamymy-cursive {
+    font-family: "Mea Culpa", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    color: var(--textone);
+  }
+  
+  .uuiiaamymy-caption {
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: -70px;
+    color: var(--minitext);
+    font-family: "Unna", serif;
+    font-weight: 400;
+  }
+  
+  .uuiiaamymy-gallery-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    position: relative;
+  }
+  
+  .uuiiaamymy-image-card {
+    position: relative;
+    max-width: 200px;
+    max-height: 200px;
+    width: 100%;             
+  }
+  
+  .uuiiaamymy-image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;     
+    display: block;
+  }
+  
+  .uuiiaamymy-vertical-text {
+    position: absolute;
+    left: -55px;
+    bottom: 123px;
+    transform: rotate(-90deg);
+    font-size: 11px;
+    color: var(--minitext);
+    font-family: "Unna", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
+    text-align: justify;
+  }
+
+
+
+
+  .uuiiaamymy-vertical-text02 {
+    position: absolute;
+    right: -55px;
+    bottom: 123px;
+    transform: rotate(90deg);
+    font-size: 11px;
+    color: var(--minitext);
+    font-family: "Unna", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
+    text-align: justify;
+  }
+  
+  .uuiiaamymy-d {
+    position: absolute;
+    top: 12px;
+    right: 0px;
+    font-size: 11px;
+    color: var(--minitext);
+    font-family: "Unna", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .uuiiaamymy-icon {
+    position: absolute;
+    max-width: 90px;              
+    max-height: 90px;
+    bottom: -10px;
+    right: -80px;
+    transform: rotate(10deg);
+  }
+
+
+  .uuiiaamymyzz-icon {
+    position: absolute;
+    max-width: 80px;
+    max-height: 80px;
+    top: -15px;
+    right: -60px;
+    transform: rotate(10deg);
+  }
+  
+  .uuiiaamymy02-icon {
+    position: absolute;
+    max-width: 120px;
+    max-height: 120px;
+    bottom: 30px;
+    left: -100px;
+    transform: rotate(8deg);
+  }
+  
+  .polaroid {
+    background: #ffffff;
+    padding: 10px 10px 40px;   
+    box-shadow: 0 4px 10px #0000001a;
+  }  
+  
+  .uuiiaamymy-text {
+    font-size: 15px;
+    max-width: 600px;
+    margin: 55px auto;
+    color: var(--texttwo);
+    text-align: justify;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.7;
+  }
+  
+  .uuiiaamymy-footer-note {
+    font-size: 12px;
+    color: var(--minitext);
+    margin-top: 5px;
+    font-family: "Unna", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
