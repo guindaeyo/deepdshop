@@ -1,0 +1,96 @@
+:root {
+  --shadow:0 12px 30px #0000001f, inset 0 1px 0 #ffffffb3;
+}
+
+.gothiczz-jai-wrap {
+  width: 100%;
+  max-width: 850px;
+  margin: auto;
+  padding: 36px 16px 80px;
+  box-sizing: border-box;
+}
+
+.gothiczz-jai-card {
+  position: relative;
+  background: var(--paperline);
+  border-top: 1px solid var(--paperline);
+  border-radius: 24px; 
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.gothiczz-jai-lace-top,.gothiczz-jai-lace-bottom {
+  height:44px; 
+  background:
+    radial-gradient(circle at 12px 36px, #ffffff 15px, #00000000 12px) 0 0/48px 44px repeat-x,
+    radial-gradient(circle at 36px 36px, #ffffff 15px, #00000000 12px) 0 0/48px 44px repeat-x,
+    linear-gradient(#f2efea,#413724);
+}
+
+.gothiczz-jai-inner { padding:26px 32px 32px; background:var(--bgbg) }
+.gothiczz-jai-deco { display:flex; justify-content:center; align-items:center; margin:4px auto 10px; }
+.gothiczz-jai-deco svg { width:min(560px,92%); height:auto; display:block; filter:drop-shadow(0 6px 6px #00000026); }
+
+.gothiczz-jai-stacked-image-container {
+  position: relative;
+  width: max-content;
+  margin: 8px auto;
+}
+
+.gothiczz-jai-image-back {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 185px;
+  height: 185px;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.gothiczz-jai-image-front {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.gothiczz-jai-title {
+  text-align:center; 
+  font-family:"Great Vibes", cursive;
+  font-size:clamp(55px,5vw,40px);
+  color:var(--namee); 
+  letter-spacing:.6px;
+}
+.gothiczz-jai-title .daggers {
+  font-family:"Karla", sans-serif; font-weight:700;
+  font-size:18px; letter-spacing:.5em;
+  color:#2e2e2e; display:block; margin-bottom:4px;
+}
+
+.gothiczz-jai-line {
+  font-family:"Crimson Text", serif;
+  text-align:center; font-size:clamp(15px,4.5vw,28px);
+  letter-spacing:.35em; margin:1px 0px 10px;
+}
+
+.gothiczz-jai-content { 
+font-family: "Itim", cursive;
+font-weight: 400;
+font-style: normal;
+max-width:700px;
+margin:0 auto; 
+text-align:justify; 
+color:var(--text); 
+font-size:21px;
+line-height: 1.5; 
+}
+
+.gothiczz-jai-ps { 
+text-align:center; 
+font-family: "Petit Formal Script", cursive;
+font-weight: 400;
+font-style: normal;
+font-size:14px; 
+color:var(--text02); 
+padding: 20px 0 18px }
