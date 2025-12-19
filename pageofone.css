@@ -46,27 +46,32 @@
       color: var(--quote); 
     }
 
+.pageof-image-grid{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin:20px 0;
+}
 
-    .pageof-image-grid {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      margin: 20px 0;
-    }
+.pageof-image-block{
+  text-align:center;
+}
 
+.pageof-image-block a{
+  display:block;
+  width:250px;
+  height:300px;
+  overflow:hidden;
+}
 
-    .pageof-image-block {
-      text-align: center;
-    }
-
-
-    .pageof-image-block img {
-      max-width: 250px;
-      max-height: 300px;
-      object-fit: cover;
-      border: 1px solid var(--text); 
-    }
-
+.pageof-image-block img{
+  width:100%;
+  height:100%;
+  object-fit:cover;          
+  object-position:center;   
+  display:block;
+  border:1px solid var(--text);
+}
 
     .pageof-caption {
       font-family: "Libre Baskerville", serif;
