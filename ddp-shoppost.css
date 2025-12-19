@@ -1,0 +1,83 @@
+.deepshop-autumn-card{
+  --bg:#f2f2f2;
+  --panel:#eeeeee;
+  --panel2:#e7e7e7;
+  --ink:#111;
+  --muted:#7a7a7a;
+  --line:#cfcfcf;
+  --pill:#d9d9d9;
+  --pillOn:#cfcfcf;
+
+  font-family:"Bai Jamjuree",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  width:min(100%,100%);
+  margin:0 auto;
+  background:var(--bg);
+  color:var(--ink);
+  padding:26px 18px 22px;
+  box-sizing:border-box;
+}
+.deepshop-aut-wrap{width:min(800px,100%);margin:0 auto;}
+.deepshop-aut-top{
+  display:grid;
+  grid-template-columns: 170px 1fr;
+  gap:18px;
+  align-items:center;
+  margin-bottom:20px;
+  margin-top:30px;
+}
+
+.deepshop-aut-bar{
+  margin-top:14px;
+  border:1px solid var(--line);
+  background:var(--pill);
+  padding:10px 12px;
+  font-weight:900;
+  text-align:center;
+  font-size:18px;
+}
+.deepshop-aut-tiles{
+  border:1px solid var(--line);
+  border-top:none;
+  background:var(--panel);
+  padding:12px;
+  gap:12px;
+  font-size:15px;
+}
+
+.deepshop-aut-likeRow{
+  border:1px solid var(--line);
+  border-top:none;
+  background:var(--panel);
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+.deepshop-aut-like{
+  padding:10px 12px 12px;
+}
+.deepshop-aut-like + .deepshop-aut-like{border-left:1px solid var(--line);}
+.deepshop-aut-like b{font-weight:900;}
+.deepshop-aut-like p{
+  margin:0;
+  color:#333;
+  font-weight:450;
+  font-size:14px;
+  line-height:1.7;
+}
+
+.deepshop-aut-foot{
+  text-align:center;
+  color:#9a9a9a;
+  font-size:12px;
+  font-weight:800;
+  margin-top:20px;
+}
+
+@media (max-width:750px){
+  .deepshop-aut-top{grid-template-columns: 140px 1fr;}
+  .deepshop-aut-ava{width:128px;height:128px;}
+  .deepshop-aut-meta .ddpname{font-size:38px;}
+  .deepshop-aut-mid{grid-template-columns: 1fr;}
+  .deepshop-aut-left{border-right:none;border-bottom:1px solid var(--line);}
+  .deepshop-aut-tiles{grid-template-columns: repeat(2, 1fr);}
+  .deepshop-aut-bottom{grid-template-columns: 1fr;}
+}
