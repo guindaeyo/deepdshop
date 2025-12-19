@@ -86,8 +86,8 @@
   
   .uuiiaamymy-vertical-text {
     position: absolute;
-    left: -55px;
-    bottom: 123px;
+    left: -50px;
+    bottom: 105px;
     transform: rotate(-90deg);
     font-size: 11px;
     color: var(--minitext);
@@ -103,8 +103,8 @@
 
   .uuiiaamymy-vertical-text02 {
     position: absolute;
-    right: -55px;
-    bottom: 123px;
+    right: -50px;
+    bottom: 105px;
     transform: rotate(90deg);
     font-size: 11px;
     color: var(--minitext);
@@ -117,7 +117,7 @@
   
   .uuiiaamymy-d {
     position: absolute;
-    top: 12px;
+    top: 14px;
     right: 0px;
     font-size: 11px;
     color: var(--minitext);
@@ -180,5 +180,3 @@
     font-weight: 400;
     font-style: normal;
   }
-
-
