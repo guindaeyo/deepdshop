@@ -58,7 +58,7 @@
 .pos-deepshop-aut-like{
   padding:10px 12px 12px;
 }
-.deepshop-aut-like + .deepshop-aut-like{
+.pos-deepshop-aut-like + .pos-deepshop-aut-like{
   border-left:1px solid var(--line);
 }
 .pos-deepshop-aut-like b{font-weight:900;}
@@ -74,5 +74,5 @@
 
 @media (max-width:600px){
   .pos-deepshop-aut-likeRow{grid-template-columns:1fr;}
-  .pos-deepshop-aut-like + .deepshop-aut-like{border-left:none;border-top:1px solid var(--line);}
+  .pos-deepshop-aut-like + .pos-deepshop-aut-like{border-left:none;border-top:1px solid var(--line);}
 }
