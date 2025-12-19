@@ -1,4 +1,4 @@
-.deepshop-autumn-card{
+.pos-deepshop-autumn-card{
   --bg:#f2f2f2;
   --panel:#eeeeee;
   --panel2:#e7e7e7;
@@ -16,15 +16,15 @@
   padding:26px 18px 22px;
   box-sizing:border-box;
 }
-.deepshop-aut-wrap{width:min(800px,100%);margin:0 auto;}
-.deepshop-aut-top{
+.pos-deepshop-aut-wrap{width:min(800px,100%);margin:0 auto;}
+.pos-deepshop-aut-top{
   gap:18px;
   align-items:center;
   margin-bottom:20px;
   margin-top:50px;
 }
 
-.deepshop-aut-bar{
+.pos-deepshop-aut-bar{
   margin-top:14px;
   border:1px solid var(--line);
   background:var(--pill);
@@ -34,7 +34,7 @@
   font-size:18px;
 }
 
-.deepshop-aut-tiles{
+.pos-deepshop-aut-tiles{
   border:1px solid var(--line);
   border-top:none;
   background:var(--panel);
@@ -47,7 +47,7 @@
   column-gap:unset !important;
 }
 
-.deepshop-aut-likeRow{
+.pos-deepshop-aut-likeRow{
   border:1px solid var(--line);
   border-top:none;
   background:var(--panel);
@@ -55,14 +55,14 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.deepshop-aut-like{
+.pos-deepshop-aut-like{
   padding:10px 12px 12px;
 }
 .deepshop-aut-like + .deepshop-aut-like{
   border-left:1px solid var(--line);
 }
-.deepshop-aut-like b{font-weight:900;}
-.deepshop-aut-like p{
+.pos-deepshop-aut-like b{font-weight:900;}
+.pos-deepshop-aut-like p{
   margin:0;
   color:#333;
   font-weight:450;
@@ -70,9 +70,9 @@
   line-height:1.7;
 }
 
-.deepshop-aut-foot{ text-align:center; color:#9a9a9a; font-size:12px; font-weight:800; margin-top:20px; }
+.pos-deepshop-aut-foot{ text-align:center; color:#9a9a9a; font-size:12px; font-weight:800; margin-top:20px; }
 
 @media (max-width:600px){
-  .deepshop-aut-likeRow{grid-template-columns:1fr;}
-  .deepshop-aut-like + .deepshop-aut-like{border-left:none;border-top:1px solid var(--line);}
+  .pos-deepshop-aut-likeRow{grid-template-columns:1fr;}
+  .pos-deepshop-aut-like + .deepshop-aut-like{border-left:none;border-top:1px solid var(--line);}
 }
