@@ -158,7 +158,7 @@
 .deepshop-aut-text .song .ddpt{font-weight:900;color:#111;}
 .deepshop-aut-text .song .ddpp{color:#666;font-weight:800;}
 
-.bbdeepshop-aut-bar{
+.deepshop-aut-bar{
   margin-top:14px;
   border:1px solid var(--line);
   background:var(--pill);
@@ -167,7 +167,7 @@
   text-align:center;
   font-size:18px;
 }
-.bbdeepshop-aut-tiles{
+.deepshop-aut-tiles{
   border:1px solid var(--line);
   border-top:none;
   background:var(--panel);
@@ -176,7 +176,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap:12px;
 }
-.bbdeepshop-aut-tile .bbddppic{
+.deepshop-aut-tile .ddppic{
   height:130px;
   background:#d6d6d6;
   overflow:hidden;
@@ -185,26 +185,26 @@
   align-items:center;
 }
 
-.bbdeepshop-aut-tile .bbddppic img{
+.deepshop-aut-tile .ddppic img{
   width:100%;
   height:100%;
   object-fit:cover;          
   object-position:center;  
   display:block;
 }
-.bbdeepshop-aut-tile .bbddpt{
+.deepshop-aut-tile .ddpt{
   margin:8px 0 1px;
   font-weight:900;
   font-size:16px;
 }
 
-.bbdeepshop-aut-tile .bbddppic a{
+.deepshop-aut-tile .ddppic a{
   display:block;
 }
-.bbdeepshop-aut-tile .bbddppic a img{
+.deepshop-aut-tile .ddppic a img{
   display:block;
 }
-.bbdeepshop-aut-tile .bbddpu{
+.deepshop-aut-tile .ddpu{
   margin:0;
   color:#7a7a7a;
   font-weight:800;
