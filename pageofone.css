@@ -50,18 +50,13 @@
   display:flex;
   justify-content:center;
   gap:10px;
-  margin:20px 0;
+  margin:20px 0 0;
 }
 
 .pageof-image-block{
+  width:250px;      
+  height:300px;     
   text-align:center;
-}
-
-.pageof-image-block a{
-  display:block;
-  width:250px;
-  height:300px;
-  overflow:hidden;
 }
 
 .pageof-image-block img{
@@ -78,7 +73,7 @@
       font-weight: 400;
       font-style: normal;
       font-size: 11px;
-      margin-top: 5px;
+      margin-top: 0px;
       color: var(--quote); 
     }
 
@@ -126,7 +121,6 @@
     
       .pageof-remark2 {
         background: var(--text); 
-        max-width: 250px;
         color: white;
         padding: 6px 6px;
         font-family: "Bai Jamjuree";
