@@ -18,8 +18,6 @@
 }
 .deepshop-aut-wrap{width:min(800px,100%);margin:0 auto;}
 .deepshop-aut-top{
-  display:grid;
-  grid-template-columns: 170px 1fr;
   gap:18px;
   align-items:center;
   margin-bottom:20px;
