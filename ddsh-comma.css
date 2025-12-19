@@ -38,7 +38,6 @@
   height:100%;
   object-fit:cover;
   display:block;
-  filter:grayscale(100%) contrast(1.05);
 }
 
 .cy-a{grid-column:1;grid-row:1;max-width:180px;border-radius:18px;}
