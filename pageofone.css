@@ -57,11 +57,9 @@
   width:250px;
   text-align:center;
 }
-
 .pageof-image-frame{
   width:250px;
   height:300px;
-  overflow:hidden;
 }
 
 .pageof-image-frame img{
@@ -81,7 +79,6 @@
   color:var(--quote);
   line-height:1.4;
 }
-
 
     .pageof-star {
       position: absolute;
