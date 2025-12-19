@@ -55,12 +55,12 @@
 }
 
 .deepshop-aut-actions{
-  max-width:680px;   
+  max-width:750px;   
   width:100%;
   margin:14px auto 12px; 
   
   display:grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1.2fr;
   gap:12px;
 }
 .deepshop-aut-btn{
@@ -70,13 +70,14 @@
   border-radius:8px;
   border:1px solid var(--line);
   background:#f6f6f6;
-  color:#111;
   font-weight:800;
-  text-decoration:none;
   user-select:none;
+  color:#111 !important;
+  text-decoration:none !important;
 }
 .deepshop-aut-btn.on{
   background:var(--pillOn);
+  color:#111 !important;
 }
 
 .deepshop-aut-mid{
