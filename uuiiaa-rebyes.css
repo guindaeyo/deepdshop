@@ -86,7 +86,7 @@
   
   .uuiiaamymy-vertical-text {
     position: absolute;
-    left: -50px;
+    left: -55px;
     bottom: 115px;
     transform: rotate(-90deg);
     font-size: 11px;
@@ -103,7 +103,7 @@
 
   .uuiiaamymy-vertical-text02 {
     position: absolute;
-    right: -50px;
+    right: -55px;
     bottom: 115px;
     transform: rotate(90deg);
     font-size: 11px;
