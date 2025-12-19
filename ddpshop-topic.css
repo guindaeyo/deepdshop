@@ -55,7 +55,7 @@
 }
 
 .deepshop-aut-actions{
-  max-width:750px;   
+  max-width:680px;   
   width:100%;
   margin:14px auto 12px; 
   
@@ -113,7 +113,7 @@
 .deepshop-aut-fa-title{
   font-weight:900;
   text-align:center;
-  margin:0 0 10px;
+  margin:0 0 0px;
   font-size:16px;
   color:#111;
 }
@@ -180,10 +180,8 @@
   background:#d6d6d6;
   overflow:hidden;
   box-shadow:0 0 0 1px rgba(0,0,0,.06) inset;
-
   display:flex;
   align-items:center;
-  justify-content:center;
 }
 
 .deepshop-aut-tile .ddppic img{
