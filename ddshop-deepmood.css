@@ -570,54 +570,45 @@
     width:100%;
     height:clamp(560px, 115vw, 820px);  
     position:relative;
+    overflow:hidden;
   }
 
-  .oe-topwide,
-  .oe-portrait,
+    .oe-topwide,
   .oe-iris,
+  .oe-portrait,
   .oe-flower{
-    left:auto; right:auto;
+    max-width:100%;
   }
 
+  /* บนสุด */
   .oe-topwide{
     left:0;
-    top:0;
-    width:100%;
-    height:clamp(170px, 38vw, 220px);
-    z-index:2;
-  }
-
-  .oe-portrait{
-    left:0;
     right:0;
-    margin:0 auto;
-    top:clamp(150px, 34vw, 210px);
-    width:min(92%, 520px);
-    height:clamp(300px, 72vw, 380px);
-    z-index:3;
+    margin:auto;
+    width:clamp(280px, 95vw, 520px);
+    height:clamp(160px, 36vw, 210px);
   }
 
+  /* ซ้ายกลาง */
   .oe-iris{
     left:0;
-    top:clamp(360px, 86vw, 520px);
-    width:min(92%, 560px);
-    height:clamp(190px, 46vw, 240px);
-    z-index:1;
+    width:clamp(260px, 92vw, 500px);
+    height:clamp(180px, 44vw, 230px);
   }
 
+  /* ขวากลาง (ตัวที่ชอบล้นสุด) */
+  .oe-portrait{
+    right:0;
+    width:clamp(260px, 88vw, 360px);
+    height:clamp(300px, 70vw, 390px);
+  }
+
+  /* ล่าง */
   .oe-flower{
     left:0;
-    bottom:0;
-    width:100%;
-    height:clamp(150px, 34vw, 190px);
-    z-index:0;
-  }
-
-  .oe-topwide .oe-inner,
-  .oe-iris .oe-inner,
-  .oe-portrait .oe-inner,
-  .oe-flower .oe-inner{
-    inset:8px;
-    border-radius:18px;
+    right:0;
+    margin:auto;
+    width:clamp(280px, 96vw, 520px);
+    height:clamp(150px, 34vw, 180px);
   }
 }
