@@ -456,7 +456,7 @@
 
 .oe-frame{
   position:absolute;
-  background:#fff;
+  background:var(--bg);
   border:1px solid var(--line);
   border-radius:18px;
   box-shadow:var(--shadow);
