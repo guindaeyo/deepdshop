@@ -559,12 +559,8 @@
   .igbar-note{
     text-align:center;
     max-width:100%;
-  }
-  .oceaneyes-post{
-    width:100%;
-    padding:14px 12px 18px;
-  }
-
+  }  }
+@media (max-width:780px){
   .oceaneyes-post{
     width:100%;
     padding:14px 12px 18px;
@@ -572,7 +568,7 @@
 
   .oceaneyes-collage{
     width:100%;
-    height:clamp(560px, 115vw, 820px); 
+    height:clamp(560px, 115vw, 820px);  
     position:relative;
   }
 
