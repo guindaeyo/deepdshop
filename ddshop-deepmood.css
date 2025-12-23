@@ -565,25 +565,63 @@
     padding:14px 12px 18px;
   }
 
+  .oceaneyes-post{
+    width:100%;
+    padding:14px 12px 18px;
+  }
+
   .oceaneyes-collage{
     width:100%;
-    height:auto;               
-    display:grid;
-    grid-template-columns:1fr;
-    gap:12px;
+    height:clamp(560px, 115vw, 820px); 
+    position:relative;
   }
 
   .oe-topwide,
   .oe-portrait,
   .oe-iris,
   .oe-flower{
-    position:relative;
-    left:auto; right:auto; top:auto; bottom:auto;
-    width:100%;
+    left:auto; right:auto;
   }
 
-  .oe-topwide{ height:200px; z-index:auto; }
-  .oe-portrait{ height:320px; z-index:auto; }
-  .oe-iris{ height:220px; z-index:auto; }
-  .oe-flower{ height:170px; z-index:auto; }
+  .oe-topwide{
+    left:0;
+    top:0;
+    width:100%;
+    height:clamp(170px, 38vw, 220px);
+    z-index:2;
+  }
+
+  .oe-portrait{
+    left:0;
+    right:0;
+    margin:0 auto;
+    top:clamp(150px, 34vw, 210px);
+    width:min(92%, 520px);
+    height:clamp(300px, 72vw, 380px);
+    z-index:3;
+  }
+
+  .oe-iris{
+    left:0;
+    top:clamp(360px, 86vw, 520px);
+    width:min(92%, 560px);
+    height:clamp(190px, 46vw, 240px);
+    z-index:1;
+  }
+
+  .oe-flower{
+    left:0;
+    bottom:0;
+    width:100%;
+    height:clamp(150px, 34vw, 190px);
+    z-index:0;
+  }
+
+  .oe-topwide .oe-inner,
+  .oe-iris .oe-inner,
+  .oe-portrait .oe-inner,
+  .oe-flower .oe-inner{
+    inset:8px;
+    border-radius:18px;
+  }
 }
