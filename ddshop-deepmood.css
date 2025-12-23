@@ -11,7 +11,7 @@
   --ornn:#b9805d;
   
   width:100%;
-  min-height:100vh;         
+  height:min(100%,100%);         
   margin:0;
   background:var(--bgmood);
   display:flex;
