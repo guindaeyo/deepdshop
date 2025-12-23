@@ -386,6 +386,7 @@
   position:relative;
   margin:0;
   width:min(860px,100%);
+  overflow:hidden;
   height:520px;
 }
 
@@ -570,7 +571,6 @@
     width:100%;
     height:clamp(560px, 115vw, 820px);  
     position:relative;
-    overflow:hidden;
   }
 
     .oe-topwide,
