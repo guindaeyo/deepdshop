@@ -9,7 +9,8 @@
     --card:#f7f4ee;
     --border:#c8c6a0;
 
-    width:min(100%px,100%);
+    width:min(100%,100%);
+    height:min(100%,100%);
     margin:0 auto;
     background:var(--bgmood);
   }
