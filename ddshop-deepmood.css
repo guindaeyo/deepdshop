@@ -9,9 +9,10 @@
   --card:#f7f4ee; 
   --border:#c8c6a0; 
   --ornn:#b9805d;
+  --conla1:#a0a093;
   
   width:100%;
-  height:min(100%,100%);         
+  height:min(100%,100%);       
   margin:0;
   background:var(--bgmood);
   display:flex;
@@ -286,7 +287,7 @@
   .deepmood-sb-player .deepmood-meta span{
     display:block;
     font-size:11px;
-    color:#a0a093;
+    color:var(--conla1);
     margin-top:3px;
     white-space:nowrap;
     overflow:hidden;
@@ -330,7 +331,7 @@
   margin-bottom:0px;
   gap:10px;
   font-size:25px;
-  color:#000;
+  color:var(--conla1);
 }
 
 .igbar-main{
@@ -420,7 +421,6 @@
     margin-left:0;
   }
 
-  /* igbar responsive */
   .igbar-main{
     grid-template-columns:1fr;
     text-align:center;
@@ -433,4 +433,75 @@
   .igbar-note{
     text-align:center;
   }
+}
+
+.oceaneyes-post{
+  --muted:#6b6b6b;
+  --line:#a9a77a;
+  --shadow:0 10px 30px rgba(0,0,0,.08);
+
+  width:min(860px,100%);
+  margin:0;
+  padding:18px 18px 26px;
+  box-sizing:border-box;
+  font-family:"Inter",system-ui,sans-serif;
+}
+
+.oceaneyes-collage{
+  position:relative;
+  margin:0;
+  width:min(860px,100%);
+  height:520px;
+}
+
+.oe-frame{
+  position:absolute;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+.oe-frame .oe-pad{ padding:10px; box-sizing:border-box; }
+.oe-frame img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:center;
+}
+
+.oe-topwide{ position:absolute; left:60px; top:0px; width:520px; height:210px; z-index:2; }
+.oe-iris{ position:absolute; left:0px; top:170px; width:500px; height:230px; z-index:1; }
+.oe-portrait{ position:absolute; right:0px; top:90px; width:360px; height:390px; z-index:3; }
+.oe-flower{ position:absolute; left:220px; bottom:10px; width:520px; height:180px; z-index:0; }
+
+.oe-topwide .oe-inner,
+.oe-iris .oe-inner,
+.oe-portrait .oe-inner,
+.oe-flower .oe-inner{
+  position:absolute;
+  inset:8px;
+  border:1px solid var(--line);
+  border-radius:18px;
+  overflow:hidden;            
+}
+
+.oe-topwide img,
+.oe-iris img,
+.oe-portrait img,
+.oe-flower img{
+  width:100%;
+  height:100%;
+  object-fit:cover;            
+  object-position:center;
+  display:block;
+}
+
+@media (max-width:780px){
+.oceaneyes-collage{ height:720px; }
+.oe-topwide{ left:0; width:100%; }
+.oe-portrait{ top:220px; width:100%; height:360px; }
+.oe-iris{ top:450px; width:100%; height:220px; }
+.oe-flower{ left:0; width:100%; height:170px; bottom:0; }
 }
