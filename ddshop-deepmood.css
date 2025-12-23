@@ -300,7 +300,6 @@
 }
 
 .deepmood-oceaneyes-post{
-  --shadow:0 10px 30px rgba(0,0,0,.08);
 
   width:min(860px,100%);
   margin:0;
@@ -320,8 +319,7 @@
   position:absolute;
   background:var(--bgmood);
   border:1px solid var(--mmborder);
-  border-radius:18px;
-  box-shadow:var(--shadow);
+  border-radius:18px;-
   overflow:hidden;
 }
 .deepmood-oe-frame .deepmood-oe-pad{ padding:10px; box-sizing:border-box; }
