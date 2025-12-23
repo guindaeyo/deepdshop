@@ -1,4 +1,4 @@
-.deepmood-sb-mmmood{ 
+.deepmood-sb-mmmood{
   --bgmood:#f4f1ea; 
   --bg:#f4f1ea; 
   --ink:#1b1b1b; 
@@ -22,7 +22,7 @@
 
 .deepmood-sb-mood{ 
   width:min(860px,100%); 
-  margin:300px 0 0; 
+  margin:200px 0 0 0; 
   background:var(--bg); 
   color:var(--ink); 
   padding:22px 22px 26px; 
@@ -312,11 +312,11 @@
   --muted:rgba(255,255,255,.75);
   
   width:min(860px,100%);
-  margin:20px auto;
   box-sizing:border-box;
   font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;                
   justify-content:center;          
   align-items:center;   
+  margin:0 auto;
 }
 
 .igbar-top{
