@@ -323,7 +323,6 @@
   font-size:15px;
   font-weight:700;
   letter-spacing:5px;
-  text-decoration:none;
 }
 .igbar-download{
   display:flex;
@@ -369,70 +368,6 @@
   color:var(--muted);
   max-width:220px;
   text-align:right;
-}
-
-@media (max-width:780px){
-
-  .deepmood-sb-grid{
-    grid-template-columns:1fr;
-  }
-
-  .deepmood-sb-top{
-    flex-direction:column;
-    align-items:flex-start;
-    gap:10px;
-  }
-
-  .deepmood-sb-right{
-    display:none;
-  }
-
-  .deepmood-sb-login{
-    max-width:100%;
-    width:100%;
-  }
-
-  .deepmood-sb-title h1{
-    font-size:46px;
-  }
-
-  .deepmood-sb-rightimgs{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .deepmood-sb-bottom{
-    margin-top:0;
-    flex-direction:column;
-    align-items:stretch;
-    gap:12px;
-  }
-
-  .deepmood-sb-player{
-    width:100%;
-  }
-
-  .deepmood-sb-places{
-    flex-direction:column;
-    align-items:flex-start;
-    gap:6px;
-  }
-
-  .deepmood-sb-places .deepmood-pav{
-    margin-left:0;
-  }
-
-  .igbar-main{
-    grid-template-columns:1fr;
-    text-align:center;
-  }
-
-  .igbar-right{
-    justify-content:center;
-  }
-
-  .igbar-note{
-    text-align:center;
-  }
 }
 
 .oceaneyes-post{
@@ -499,9 +434,156 @@
 }
 
 @media (max-width:780px){
-.oceaneyes-collage{ height:720px; }
-.oe-topwide{ left:0; width:100%; }
-.oe-portrait{ top:220px; width:100%; height:360px; }
-.oe-iris{ top:450px; width:100%; height:220px; }
-.oe-flower{ left:0; width:100%; height:170px; bottom:0; }
+
+  .deepmood-sb-mmmood{
+    padding:14px 12px;
+    gap:12px;
+  }
+
+  .deepmood-sb-mood{
+    width:100%;
+    padding:18px 14px 18px;
+    border-radius:16px;
+  }
+
+  .deepmood-sb-top{
+    flex-direction:column;
+    align-items:stretch;
+    gap:10px;
+    margin-bottom:12px;
+  }
+
+  .deepmood-sb-right{ display:none; }
+
+  .deepmood-sb-login{
+    max-width:100%;
+    width:100%;
+    justify-content:flex-start;
+    padding:10px 12px;
+  }
+
+  .deepmood-sb-title{ margin:8px 0 14px; }
+  .deepmood-sb-title h1{ font-size:42px; }
+
+  .deepmood-sb-grid{
+    grid-template-columns:1fr;
+    gap:14px;
+  }
+
+  .deepmood-sb-left,
+  .deepmood-sb-center,
+  .deepmood-sb-rightcol{
+    gap:14px;
+  }
+
+  .deepmood-img-l1{ height:220px; }
+  .deepmood-img-l2{ height:260px; }
+  .deepmood-img-c1{ height:200px; }
+  .deepmood-img-c2{ height:240px; }
+  .deepmood-img-r1{ height:220px; }
+  .deepmood-img-z1{ height:200px; }
+
+  .deepmood-sb-rightimgs{
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+  }
+  .deepmood-img-r2,
+  .deepmood-img-r3{ height:120px; }
+
+  .deepmood-sb-bottom{
+    margin-top:10px;              
+    flex-direction:column;
+    align-items:stretch;
+    gap:12px;
+  }
+
+  .deepmood-sb-player{
+    width:100%;
+  }
+
+  .deepmood-sb-places{
+    flex-direction:row;          
+    align-items:center;
+    gap:10px;
+  }
+  .deepmood-sb-places .deepmood-t b{ font-size:24px; margin-top:6px; }
+  .deepmood-sb-places .deepmood-pav{
+    margin-left:auto;
+    width:64px;height:64px;
+  }
+  
+  .igbar{ width:100%; }
+
+  .igbar-top{
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    margin-bottom:10px;
+  }
+
+  .igbar-pill{
+    width:fit-content;
+    padding:10px 22px;
+    letter-spacing:4px;
+  }
+
+  .igbar-download{
+    justify-content:center;
+    font-size:22px;
+  }
+
+  .igbar-main{
+    grid-template-columns:1fr;
+    text-align:center;
+    padding:14px 16px;
+    gap:12px;
+    border-radius:22px;
+  }
+
+  .igbar-name{
+    font-size:30px;
+    white-space:normal;         
+    line-height:1.05;
+  }
+
+  .igbar-desc{
+    max-width:100%;
+  }
+
+  .igbar-right{
+    justify-content:center;
+    flex-direction:column;
+    gap:8px;
+  }
+
+  .igbar-note{
+    text-align:center;
+    max-width:100%;
+  }
+  .oceaneyes-post{
+    width:100%;
+    padding:14px 12px 18px;
+  }
+
+  .oceaneyes-collage{
+    width:100%;
+    height:auto;               
+    display:grid;
+    grid-template-columns:1fr;
+    gap:12px;
+  }
+
+  .oe-topwide,
+  .oe-portrait,
+  .oe-iris,
+  .oe-flower{
+    position:relative;
+    left:auto; right:auto; top:auto; bottom:auto;
+    width:100%;
+  }
+
+  .oe-topwide{ height:200px; z-index:auto; }
+  .oe-portrait{ height:320px; z-index:auto; }
+  .oe-iris{ height:220px; z-index:auto; }
+  .oe-flower{ height:170px; z-index:auto; }
 }
