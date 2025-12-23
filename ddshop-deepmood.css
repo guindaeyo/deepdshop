@@ -10,19 +10,20 @@
   --border:#c8c6a0; 
   --ornn:#b9805d;
   
-  width:min(100%,100%); 
-  height:min(100%,100%); 
-  margin:0 auto; 
+  width:100%;
+  min-height:100vh;         
+  margin:0;
   background:var(--bgmood);
   display:flex;
-  flex-direction:column;
-  justify-content:center;          
-  align-items:center;   
-} 
+  flex-direction:column;     
+  justify-content:center;    
+  align-items:center;      
+  gap:15px;                  
+}
 
 .deepmood-sb-mood{ 
   width:min(860px,100%); 
-  margin:200px 0 0 0; 
+  margin:0; 
   background:var(--bg); 
   color:var(--ink); 
   padding:22px 22px 26px; 
@@ -292,19 +293,6 @@
     text-overflow:ellipsis;
   }
 
-@media (max-width:780px){
-.deepmood-sb-grid{grid-template-columns:1fr;}
-.deepmood-sb-top{flex-direction:column;align-items:flex-start;gap:10px;}
-.deepmood-sb-right{display:none;}
-.deepmood-sb-login{max-width:100%;width:100%;}
-.deepmood-sb-title h1{font-size:46px;}
-.deepmood-sb-rightimgs{grid-template-columns:1fr 1fr;}
-.deepmood-sb-bottom{margin-top:0;flex-direction:column;align-items:stretch;gap:12px;}
-.deepmood-sb-player{width:100%;}
-.deepmood-sb-places{flex-direction:column;align-items:flex-start;gap:6px;}
-.deepmood-sb-places .deepmood-pav{margin-left:0;}
-}
-
 .igbar{
   --bg:#a9a77a;
   --pill:#b9805d;
@@ -316,7 +304,7 @@
   font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;                
   justify-content:center;          
   align-items:center;   
-  margin:0 auto;
+  margin:0; 
 }
 
 .igbar-top{
@@ -382,14 +370,66 @@
   text-align:right;
 }
 
-@media (max-width:700px){
+@media (max-width:780px){
+
+  .deepmood-sb-grid{
+    grid-template-columns:1fr;
+  }
+
+  .deepmood-sb-top{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+  }
+
+  .deepmood-sb-right{
+    display:none;
+  }
+
+  .deepmood-sb-login{
+    max-width:100%;
+    width:100%;
+  }
+
+  .deepmood-sb-title h1{
+    font-size:46px;
+  }
+
+  .deepmood-sb-rightimgs{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .deepmood-sb-bottom{
+    margin-top:0;
+    flex-direction:column;
+    align-items:stretch;
+    gap:12px;
+  }
+
+  .deepmood-sb-player{
+    width:100%;
+  }
+
+  .deepmood-sb-places{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:6px;
+  }
+
+  .deepmood-sb-places .deepmood-pav{
+    margin-left:0;
+  }
+
+  /* igbar responsive */
   .igbar-main{
     grid-template-columns:1fr;
     text-align:center;
   }
+
   .igbar-right{
     justify-content:center;
   }
+
   .igbar-note{
     text-align:center;
   }
