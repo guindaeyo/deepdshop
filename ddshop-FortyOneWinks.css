@@ -1,6 +1,6 @@
 .ywmf{
   --w: min(100%,100%);   
-  --h: 1200px;
+  --h: 1500px;
 
   --paper:#e9e9ea;
   --ink:#1a1a1a;
@@ -44,7 +44,7 @@
 .ywmf-card{
   position:absolute;
   left: 56px;
-  top: 240px;
+  top: 300px;
   width: 200px;
   padding: 18px 18px 16px;
   border-radius: 18px;
@@ -146,7 +146,7 @@
 .ywmf-swatches{
   position:absolute;
   left: 300px;
-  bottom: 190px;
+  bottom: 250px;
   z-index:3;
   display:flex;
   flex-direction:column;
