@@ -115,9 +115,8 @@
 .ywmf-body{
   position:relative;
   font-size:11px;
-  line-height:1.6;
+  line-height:1.7;
   color: rgba(20,20,20,.72);
-  white-space:pre-line;
 }
 .ywmf-sep{
   position:relative;
@@ -160,6 +159,7 @@
 }
 .ywmf-swatch.s1{ background: var(--sage); }
 .ywmf-swatch.s2{ background: var(--beige); }
+.ywmf-swatch.s3{ background: var(--beige); }
 
 .ywmf-clover{
   position:absolute;
