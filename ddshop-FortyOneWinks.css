@@ -43,9 +43,9 @@
 
 .ywmf-card{
   position:absolute;
-  left: 56px;
-  top: 300px;
-  width: 200px;
+  left: 100px;
+  top: 500px;
+  width: 300px;
   padding: 18px 18px 16px;
   border-radius: 18px;
   background: rgba(230,230,232,.86);
@@ -145,8 +145,8 @@
 
 .ywmf-swatches{
   position:absolute;
-  left: 300px;
-  bottom: 250px;
+  left: 450px;
+  bottom: 450px;
   z-index:3;
   display:flex;
   flex-direction:column;
