@@ -83,7 +83,7 @@
   color: var(--ddptxtname);
   font-size: 32px;
   line-height: 1.05;
-  margin: 6px 0 12px;
+  margin: -10px 0 12px;
 }
 .ddpshop-ywmf-title span{ display:block; font-weight:600; }
 
