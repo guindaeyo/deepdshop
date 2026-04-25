@@ -52,7 +52,7 @@
     z-index: 20; white-space: nowrap; color: var(--unbgtext);
 }
 
-.oxoneddspside-text { position: absolute; top: 44%; transform: translateY(-50%); text-align: center; z-index: 10; }
+.oxoneddspside-text { position: absolute; top: 43%; transform: translateY(-50%); text-align: center; z-index: 10; }
 .oxoneddspside-text.left { left: 50px; }
 .oxoneddspside-text.right { right: 40px; letter-spacing: 4px; font-size: 16px; font-family: 'Playfair Display', serif; }
 .oxoneddspside-text .small { font-size: 9px; font-style: italic; color: var(--subnameox); position: relative; top: 10px; }
