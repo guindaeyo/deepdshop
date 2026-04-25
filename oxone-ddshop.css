@@ -27,7 +27,7 @@
 }
 .oxoneddspsub-title { 
     font-size: 10px; letter-spacing: 3px; margin-left: 140px;
-    color: var(--nameox) !important; position: relative; top: -5px; z-index: 11;
+    color: var(--subnameox) !important; position: relative; top: -5px; z-index: 11;
 }
 
 .oxoneddspgrid-wrapper { position: relative; width: 480px; margin: 35px auto; z-index: 1; }
