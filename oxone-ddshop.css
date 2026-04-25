@@ -55,8 +55,8 @@
 .oxoneddspside-text { position: absolute; top: 44%; transform: translateY(-50%); text-align: center; z-index: 10; }
 .oxoneddspside-text.left { left: 50px; }
 .oxoneddspside-text.right { right: 40px; letter-spacing: 4px; font-size: 16px; font-family: 'Playfair Display', serif; }
-.oxoneddspside-text .small { font-size: 9px; font-style: italic; color: var(--linehd); position: relative; top: 10px; }
-.oxoneddspside-text p { font-family: 'Playfair Display', serif; font-size: 13px; letter-spacing: 6px; margin: 12px 0; color: var(--linehd); }
+.oxoneddspside-text .small { font-size: 9px; font-style: italic; color: var(--subnameox); position: relative; top: 10px; }
+.oxoneddspside-text p { font-family: 'Playfair Display', serif; font-size: 13px; letter-spacing: 6px; margin: 12px 0; color: var(--subnameox); }
 
 .oxoneddsppill {
     border: 1px solid var(--unbgtext) !important; background-color: var(--unbg); color: var(--unbgtext);
