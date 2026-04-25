@@ -45,9 +45,9 @@
 .oxoneddspportrait-frame img { width: 100%; height: 100%; object-fit: cover; }
 
 .oxoneddspname-label {
-    position: absolute; bottom: 25px; left: 50%;
+    position: absolute; bottom: 25px; left: 50%; 
     transform: translateX(-50%); border: 1px solid var(--unbgtext) !important;
-    border-radius: 40px; padding: 5px 30px; background: var(--unbg); 
+    border-radius: 40px; padding: 0px 30px; background: var(--unbg); 
     font-family: 'Pinyon Script', cursive; font-size: 20px;
     z-index: 20; white-space: nowrap; color: var(--unbgtext);
 }
@@ -73,9 +73,9 @@
 .oxoneddspside-text .small { font-size: 9px; font-style: italic; color: var(--subnameox); position: relative; top: 10px; }
 .oxoneddspside-text p { font-family: 'Playfair Display', serif; font-size: 13px; letter-spacing: 6px; margin: 12px 0; color: var(--subnameox); }
 
-.oxoneddsppill {border: 1px solid var(--unbgtext) !important; background-color: var(--unbg); color: var(--unbgtext); border-radius: 50px; padding: 5px 20px; font-size: 12px;font-style: italic; font-family: 'Playfair Display', serif;display: inline-block;margin-top: -5px;}
+.oxoneddsppill {border: 1px solid var(--unbgtext) !important; background-color: var(--unbg); color: var(--unbgtext); border-radius: 50px; padding: 2px 20px; font-size: 12px;font-style: italic; font-family: 'Playfair Display', serif;display: inline-block;margin-top: -5px;}
 
-.oxoneddsprp-section {margin-top: 50px; width: 95%; border-top: 1px solid #c2bebe !important; padding-top: 30px; position: relative; z-index: 5;}
+.oxoneddsprp-section {margin-top: 50px; margin-bottom: 5px; width: 95%; border-top: 1px solid #c2bebe !important; padding-top: 30px; position: relative; z-index: 5;}
 
 .oxoneddsprp-header {
     font-family: 'Playfair Display', serif; 
