@@ -75,7 +75,18 @@
 
 .oxoneddsppill {border: 1px solid var(--unbgtext) !important; background-color: var(--unbg); color: var(--unbgtext); border-radius: 50px; padding: 2px 20px; font-size: 12px;font-style: italic; font-family: 'Playfair Display', serif;display: inline-block;margin-top: -5px;}
 
-.oxoneddsprp-section {margin-top: 50px; margin-bottom: px; width: 95%; border-top: 1px solid #c2bebe !important; padding-top: 30px; position: relative; z-index: 5;}
+
+.oxoneddsprp-section {
+    margin-top: 50px; 
+    margin-bottom: 15px; 
+    width: 95%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    border-top: 1px solid #c2bebe !important; 
+    padding-top: 30px; 
+    position: relative; 
+    z-index: 5;
+}
 
 .oxoneddsprp-header {
     font-family: 'Playfair Display', serif; 
@@ -92,12 +103,15 @@
     font-size: 16px; 
     line-height: 1.7;
     color: var(--roltext); 
-    text-align: justify;
+    text-align: justify; 
     font-family: "Bai Jamjuree", sans-serif; 
     font-weight: 400;
     position: relative; 
     top: -20px;
+    margin-left: auto;
+    margin-right: auto;
     
     border: none !important; 
     background: transparent; 
 }
+
