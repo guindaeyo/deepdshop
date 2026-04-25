@@ -54,18 +54,18 @@
 
 .oxoneddspside-text { 
     position: absolute; 
-    top: 430px; 
+    top: 435px; 
     transform: none; 
     text-align: center; 
     z-index: 10; 
 }
 
 .oxoneddspside-text.left { 
-    left: 55px; top: 420px; 
+    left: 55px; top: 410px; 
 }
 
 .oxoneddspside-text.right { 
-    right: 40px; top: 430px; 
+    right: 40px;
     letter-spacing: 4px; 
     font-size: 16px; 
     font-family: 'Playfair Display', serif; 
