@@ -5,7 +5,7 @@
     width: 100%; max-width: 850px; margin: 20px auto;
     background-color: var(--backgbg); padding: 50px 40px;
     font-family: 'Montserrat', sans-serif; position: relative;
-    box-sizing: border-box; color: #fff;
+    box-sizing: border-box; color: var(--nameox) !important;
     border: 15px solid var(--borderox) !important; 
 }
 
