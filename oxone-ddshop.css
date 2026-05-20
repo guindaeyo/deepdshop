@@ -48,7 +48,7 @@
     position: absolute; bottom: 25px; left: 50%; 
     transform: translateX(-50%); border: 1px solid var(--unbgtext) !important;
     border-radius: 40px; padding: 0px 30px; background: var(--unbg); 
-    font-family: 'Pinyon Script', cursive; font-size: 20px;
+    font-family: 'Pinyon Script', cursive, "Bai Jamjuree", sans-serif; font-size: 20px;
     z-index: 20; white-space: nowrap; color: var(--unbgtext);
 }
 
