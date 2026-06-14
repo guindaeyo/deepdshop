@@ -1,0 +1,189 @@
+.dndddp-wrap{
+  width:100%;
+  max-width:600px;
+  margin:0 auto;
+  padding:38px 20px 24px;
+  background:var(--bgg01);
+  font-family:"Bai Jamjuree",sans-serif;
+  box-sizing:border-box;
+}
+
+.dndddp-title{
+  text-align:center;
+  color:var(--colormain);
+  margin-bottom:8px;
+  line-height:1.3;
+  font-family:Georgia,serif;
+}
+
+.dndddp-cloud{
+  font-size:30px;
+  font-weight:bold;
+  margin-bottom:3px;
+}
+
+.dndddp-title h1{
+  margin:0;
+  font-size:25px;
+  letter-spacing:.5px;
+  font-weight:800;
+}
+
+.dndddp-title span{
+  font-size:16px;
+  letter-spacing:10px;
+}
+
+.dndddp-grid{
+  position:relative;
+  width:450px;
+  height:455px;
+  margin:0 auto;
+  bottom:-15px;
+}
+
+.dndddp-photo{
+  position:absolute;
+  overflow:hidden;
+}
+
+.dndddp-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.p1{
+  left:0;
+  top:0;
+  width:210px;
+  height:215px;
+  border-radius:15px 0 0 15px;
+}
+
+.p2{
+  right:0;
+  top:0px;
+  width:230px;
+  height:170px;
+  border-radius:0 15px 0 0;
+}
+
+.p3{
+  left:0;
+  top:225px;
+  width:210px;
+  height:128px;
+  border-radius:15px 0 0 0;
+}
+
+.p4{
+  right:0;
+  top:176px;
+  width:230px;
+  height:205px;
+  border-radius:0 0 15px 0;
+}
+
+.dndddp-heart{
+  position:absolute;
+  left:320px;
+  top:150px;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background:var(--bgg01);
+  color:var(--colormain);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:30px;
+  box-shadow:0 2px 8px rgba(175,195,220,.18);
+  z-index:5;
+}
+
+.dndddp-tabs-bottom{
+  position:absolute;
+  left:0px;
+  top:362px;
+  width:210px;
+  display:flex;
+  justify-content:center;
+  gap:6px;
+  z-index:10;
+}
+
+.dndddp-tabs-bottom span{
+  width:85px;
+  height:20px;
+  border-radius:20px;
+  border:1px solid var(--colormain);
+  background:var(--bgg01);
+  color:var(--colormain);
+  font-size:10px;
+  letter-spacing:.5px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.dndddp-tabs-bottom span:nth-child(1),
+.dndddp-tabs-bottom span:nth-child(3){
+  background:var(--colormain);
+  color:var(--bgg01);
+  border-color:var(--bgg01);
+}
+
+.dndddp-rp{
+  width:450px;
+  margin:6px auto 10px;
+  font-family:"Bai Jamjuree",sans-serif;
+  font-size:14px;
+  line-height:1.7;
+  font-weight:400;
+  color:var(--colorrole);
+  text-align:justify;
+  position:relative;
+  top:-30px; 
+}
+
+.dndddp-bottom{
+  width:450px;
+  margin-top:-10px;
+  margin-bottom:20px;
+  margin-left:auto;
+  margin-right:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  color:var(--colormain);
+}
+
+.dndddp-bottom > span{
+  width:14px;
+  height:14px;
+  border-radius:50%;
+  border:1px solid var(--colormain);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:10px;
+}
+
+.dndddp-bottom div{
+  width:370px;
+  height:30px;
+  border:1px solid var(--colormain);
+  border-radius:30px;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  color:var(--colormain);
+  font-size:10px;
+}
+
+.dndddp-bottom a{
+  text-decoration:none;
+  color:var(--colormain);
+}
