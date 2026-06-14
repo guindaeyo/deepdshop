@@ -151,7 +151,7 @@
 .dndddp-bottom{
   width:450px;
   margin-top:-10px;
-  margin-bottom:20px;
+  margin-bottom:15px;
   margin-left:auto;
   margin-right:auto;
   display:flex;
@@ -186,4 +186,19 @@
 .dndddp-bottom a{
   text-decoration:none;
   color:var(--colormain);
+}
+
+.dndddp-bottom,
+.dndddp-bottom *{
+  visibility:visible!important;
+  opacity:1!important;
+}
+
+.dndddp-bottom a{
+  display:inline-block;
+  text-decoration:none!important;
+  color:var(--colormain)!important;
+  font-size:10px!important;
+  line-height:30px!important;
+  font-family:"Bai Jamjuree",sans-serif!important;
 }
