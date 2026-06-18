@@ -2,10 +2,11 @@
 
 .boutmeddsh {
   position: relative;
-  max-width: 100%;
-  min-height: 100hv;
+  width: 100%;
+  max-width: none;
+  min-height: 100vh;
   margin: 0;
-  padding: 64px 5vw 120px;
+  padding: 90px 0 90px;
   box-sizing: border-box;
   background: var(--bgbbg);
   font-family: 'Bai Jamjuree', sans-serif;
