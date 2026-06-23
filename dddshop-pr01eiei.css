@@ -500,3 +500,31 @@
   line-height: 1 !important;
   font-weight: 700 !important;
 }
+
+.profco01ddps-nav {
+  height: 56px !important;
+  min-height: 56px !important;
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) 54px !important;
+  align-items: stretch !important;
+  overflow: visible !important;
+}
+
+.profco01ddps-navitem {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 56px !important;
+  min-height: 56px !important;
+  width: 100% !important;
+  color: var(--prof-text) !important;
+  font-family: "Bai Jamjuree", sans-serif !important;
+  font-size: 12px !important;
+  line-height: 1 !important;
+  font-weight: 700 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  text-indent: 0 !important;
+  transform: none !important;
+  position: static !important;
+}
