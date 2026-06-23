@@ -414,3 +414,103 @@
   background: var(--prof-button-bg);
   border-radius: 999px;
 }
+
+.profco01ddps-nav {
+  min-height: 45px;
+  overflow: visible;
+}
+
+.profco01ddps-nav a,
+.profco01ddps-nav a:link,
+.profco01ddps-nav a:visited,
+.profco01ddps-nav a:hover,
+.profco01ddps-nav a:active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 45px;
+  color: var(--prof-text) !important;
+  text-decoration: none !important;
+  font-size: 12px;
+  line-height: 1;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.profco01ddpspost-tabs {
+  min-height: 32px;
+  padding: 0 15px;
+  align-items: center;
+}
+
+.profco01ddpspost-tabs a,
+.profco01ddpspost-tabs a:link,
+.profco01ddpspost-tabs a:visited,
+.profco01ddpspost-tabs a:hover,
+.profco01ddpspost-tabs a:active {
+  display: flex;
+  align-items: center;
+  min-height: 32px;
+  color: var(--prof-text) !important;
+  text-decoration: none !important;
+  line-height: 1;
+}
+
+.profco01ddpspost-tabs a:nth-child(2) {
+  justify-content: center;
+}
+
+.profco01ddpspost-tabs a:nth-child(3) {
+  justify-content: flex-end;
+}
+
+.profco01ddps-bottom.lua-music {
+  margin-left: 70px;
+  grid-template-columns: 62px minmax(0, 1fr) 44px;
+  column-gap: 16px;
+  align-items: center;
+}
+
+.profco01ddpsmusic-cover {
+  position: relative;
+  z-index: 1;
+  flex: 0 0 62px;
+}
+
+.profco01ddpsmusic-info {
+  min-width: 0;
+  display: grid;
+  grid-template-rows: auto auto;
+  row-gap: 10px;
+}
+
+.profco01ddpsmusic-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 34px;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 0;
+}
+
+.profco01ddpsmusic-line {
+  display: grid;
+  grid-template-columns: 34px minmax(120px, 1fr) 34px;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+}
+
+.profco01ddpsmusic-progress {
+  display: block;
+  width: 100%;
+  min-width: 120px;
+  height: 6px;
+  box-sizing: border-box;
+}
+
+.profco01ddpsmusic-progress div {
+  display: block;
+  width: var(--progress, 38%);
+  min-width: 8px;
+  height: 100%;
+}
