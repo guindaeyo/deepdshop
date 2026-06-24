@@ -2,18 +2,18 @@
 
 .ddshigherth-frame {
   width: 100%;
-  max-width: 736px;
+  max-width: 650px;
   margin: 0 auto;
   overflow: hidden;
 }
 
 .ddshigherth-scale {
-  width: 736px;
+  width: 650px;
   transform-origin: top left;
 }
 
 .ddshigherth-pearl {
-  width: 736px;
+  width: 650px;
   min-height: 736px;
   height: auto;
   margin: 0;
@@ -320,18 +320,18 @@
   transform-origin: top center;
 }
 
-@media (max-width: 736px) {
+@media (max-width: 650px) {
   .ddshigherth-frame {
     width: calc(100vw - 24px);
     max-width: calc(100vw - 24px);
   }
 
   .ddshigherth-scale {
-    width: 736px;
+    width: 650px;
     transform: none !important;
   }
 
   .ddshigherth-pearl {
-    zoom: calc((100vw - 24px) / 736);
+    zoom: calc((100vw - 24px) / 650);
   }
 }
