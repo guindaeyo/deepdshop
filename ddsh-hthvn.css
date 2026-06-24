@@ -300,12 +300,38 @@
   font-weight: 500;
 }
 
+.ddshigherth-frame {
+  width: 100%;
+  max-width: 736px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.ddshigherth-scale {
+  width: 736px;
+  transform: none !important;
+  transform-origin: top left;
+}
+
+.ddshigherth-pearl {
+  width: 736px;
+  max-width: none;
+  margin: 0 auto;
+  transform-origin: top center;
+}
+
 @media (max-width: 736px) {
   .ddshigherth-frame {
-    width: calc(100vw - 20px);
+    width: calc(100vw - 24px);
+    max-width: calc(100vw - 24px);
   }
 
   .ddshigherth-scale {
-    transform: scale(calc((100vw - 20px) / 736));
+    width: 736px;
+    transform: none !important;
+  }
+
+  .ddshigherth-pearl {
+    zoom: calc((100vw - 24px) / 736);
   }
 }
