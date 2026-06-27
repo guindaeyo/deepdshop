@@ -69,8 +69,6 @@
   overflow: visible !important;
 }
 
-/* ===== TOP NAV FIX ===== */
-
 .profco01ddps-nav {
   width: 100% !important;
   height: 56px !important;
@@ -149,8 +147,6 @@
   opacity: 1 !important;
   visibility: visible !important;
 }
-
-/* ===== CARD / POST ===== */
 
 .profco01ddps-card {
   margin-left: 18px !important;
@@ -300,7 +296,6 @@
   justify-content: flex-end !important;
 }
 
-/* ===== INFO ===== */
 
 .profco01ddps-info {
   margin-top: 17px !important;
@@ -502,7 +497,6 @@
   visibility: visible !important;
 }
 
-/* บังคับให้เวลาอยู่ซ้าย-ขวา และเส้นเพลงอยู่กลาง */
 .profco01ddpsmusic-line span:first-of-type {
   grid-column: 1 !important;
   grid-row: 1 !important;
@@ -525,18 +519,25 @@
   display: block !important;
   border: var(--prof-border) !important;
   border-radius: 999px !important;
-  background: var(--prof-bg) !important;
+  background: #ffffff !important;
   overflow: hidden !important;
   position: relative !important;
   z-index: 12 !important;
 }
 
-.profco01ddpsmusic-progress div {
-  width: var(--progress, 38%) !important;
-  min-width: 8px !important;
-  max-width: 100% !important;
+.profco01ddpsmusic-progress::before {
+  content: "" !important;
+  width: 38% !important;
   height: 100% !important;
   display: block !important;
-  background: var(--prof-button) !important;
+  background: #000000 !important;
   border-radius: 999px !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 13 !important;
+}
+
+.profco01ddpsmusic-progress div {
+  display: none !important;
 }
