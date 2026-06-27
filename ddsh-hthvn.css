@@ -329,7 +329,7 @@
     width:58%;
     max-width:310px;
     min-width:0;
-    transform:translateX(-50%) scale(.72);
+    transform:translateX(-50%);
     transform-origin:top center;
   }
 
