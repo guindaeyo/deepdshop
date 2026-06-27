@@ -25,10 +25,12 @@
   align-items: flex-start !important;
   font-family: "Bai Jamjuree", sans-serif !important;
   color: var(--prof-text) !important;
+  overflow-x: auto !important;
 }
 
 .profco01ddps-board {
   width: 900px !important;
+  min-width: 900px !important;
   min-height: 646px !important;
   height: auto !important;
   background: var(--prof-bg) !important;
@@ -37,6 +39,7 @@
   grid-template-columns: 240px minmax(0, 1fr) !important;
   position: relative !important;
   overflow: visible !important;
+  isolation: isolate !important;
 }
 
 .profco01ddps-left {
@@ -44,6 +47,8 @@
   padding: 15px 8px !important;
   border-right: var(--prof-border) !important;
   position: relative !important;
+  z-index: 1 !important;
+  overflow: visible !important;
 }
 
 .profco01ddps-main-img {
@@ -55,73 +60,70 @@
   filter: grayscale(25%) !important;
 }
 
-.profco01ddps-avatar {
-  width: 145px !important;
-  height: 145px !important;
-  padding: 9px !important;
-  border: var(--prof-border) !important;
-  border-radius: 50% !important;
-  background: var(--prof-bg) !important;
-  position: absolute !important;
-  right: -82px !important;
-  bottom: 37px !important;
-  z-index: 5 !important;
-}
-
-.profco01ddps-avatar img {
-  width: 100% !important;
-  height: 100% !important;
-  display: block !important;
-  border-radius: 50% !important;
-  border: 1px solid var(--prof-line) !important;
-  object-fit: cover !important;
-  filter: grayscale(25%) !important;
-}
-
 .profco01ddps-right {
   min-width: 0 !important;
   display: flex !important;
   flex-direction: column !important;
+  position: relative !important;
+  z-index: 2 !important;
+  overflow: visible !important;
 }
 
+/* ===== TOP NAV FIX ===== */
+
 .profco01ddps-nav {
+  width: 100% !important;
   height: 56px !important;
   min-height: 56px !important;
   border-bottom: var(--prof-border) !important;
   display: grid !important;
-  grid-template-columns: repeat(4, minmax(0, 1fr)) 54px !important;
+  grid-template-columns: repeat(4, minmax(90px, 1fr)) 70px !important;
   align-items: stretch !important;
   text-align: center !important;
   overflow: visible !important;
+  background: var(--prof-bg) !important;
+  position: relative !important;
+  z-index: 20 !important;
 }
 
 .profco01ddps-nav a,
 .profco01ddps-nav a:link,
 .profco01ddps-nav a:visited,
 .profco01ddps-nav a:hover,
-.profco01ddps-nav a:active {
+.profco01ddps-nav a:active,
+.profco01ddps-nav span,
+.profco01ddps-navitem {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   min-width: 0 !important;
   width: 100% !important;
   height: 56px !important;
+  min-height: 56px !important;
   margin: 0 !important;
-  padding: 0 4px !important;
+  padding: 0 6px !important;
   color: var(--prof-text) !important;
   background: transparent !important;
   text-decoration: none !important;
   font-family: "Bai Jamjuree", sans-serif !important;
-  font-size: 12px !important;
+  font-size: 11px !important;
   line-height: 1 !important;
   font-weight: 700 !important;
   opacity: 1 !important;
   visibility: visible !important;
-  position: static !important;
+  position: relative !important;
+  z-index: 21 !important;
   transform: none !important;
+  text-indent: 0 !important;
+  white-space: nowrap !important;
+  overflow: visible !important;
+  clip-path: none !important;
+  -webkit-text-fill-color: var(--prof-text) !important;
 }
 
 .profco01ddps-lock {
+  width: 70px !important;
+  min-width: 70px !important;
   height: 56px !important;
   min-height: 56px !important;
   border-left: var(--prof-border) !important;
@@ -130,8 +132,11 @@
   justify-content: center !important;
   align-items: center !important;
   color: var(--prof-text) !important;
+  background: var(--prof-bg) !important;
   font-size: 13px !important;
   line-height: 1 !important;
+  position: relative !important;
+  z-index: 22 !important;
 }
 
 .profco01ddps-lock small {
@@ -141,7 +146,11 @@
   font-size: 10px !important;
   line-height: 1 !important;
   font-weight: 700 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
+
+/* ===== CARD / POST ===== */
 
 .profco01ddps-card {
   margin-left: 18px !important;
@@ -151,7 +160,7 @@
 }
 
 .profco01ddps-post {
-  margin-top: 72px !important;
+  margin-top: 30px !important;
   height: auto !important;
   min-height: 142px !important;
   overflow: visible !important;
@@ -253,7 +262,7 @@
   display: grid !important;
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
   align-items: center !important;
-  overflow: hidden !important;
+  overflow: visible !important;
   font-size: 11px !important;
   line-height: 1 !important;
   font-weight: 700 !important;
@@ -275,6 +284,8 @@
   font-size: 11px !important;
   line-height: 1 !important;
   font-weight: 700 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 .profco01ddpspost-tabs a:nth-child(1) {
@@ -288,6 +299,8 @@
 .profco01ddpspost-tabs a:nth-child(3) {
   justify-content: flex-end !important;
 }
+
+/* ===== INFO ===== */
 
 .profco01ddps-info {
   margin-top: 17px !important;
@@ -353,29 +366,34 @@
   object-fit: cover !important;
 }
 
+
 .profco01ddps-bottom.lua-music {
   min-height: 110px !important;
   height: auto !important;
-  margin: 18px 18px 28px 70px !important;
-  padding: 18px 28px 18px 22px !important;
+  margin: 18px 18px 28px 18px !important;
+  padding: 18px 26px 18px 28px !important;
   border: var(--prof-border) !important;
   border-radius: 0 14px 14px 0 !important;
   background: var(--prof-card) !important;
   display: grid !important;
-  grid-template-columns: 72px minmax(0, 1fr) !important;
+  grid-template-columns: 76px minmax(0, 1fr) !important;
   align-items: center !important;
   column-gap: 18px !important;
   overflow: visible !important;
+  position: relative !important;
+  z-index: 10 !important;
 }
 
 .profco01ddpsmusic-cover {
-  width: 72px !important;
-  height: 72px !important;
+  width: 76px !important;
+  height: 76px !important;
+  min-width: 76px !important;
+  flex: 0 0 76px !important;
   border: var(--prof-border) !important;
   background: var(--prof-muted) !important;
   overflow: hidden !important;
   position: relative !important;
-  z-index: 2 !important;
+  z-index: 11 !important;
 }
 
 .profco01ddpsmusic-cover img {
@@ -391,7 +409,8 @@
   width: 100% !important;
   display: grid !important;
   grid-template-rows: auto auto !important;
-  row-gap: 14px !important;
+  row-gap: 16px !important;
+  overflow: visible !important;
 }
 
 .profco01ddpsmusic-top {
@@ -401,6 +420,7 @@
   grid-template-columns: minmax(0, 1fr) 44px !important;
   align-items: center !important;
   column-gap: 16px !important;
+  overflow: visible !important;
 }
 
 .profco01ddpsmusic-top h3 {
@@ -425,11 +445,11 @@
   text-overflow: ellipsis !important;
 }
 
-.profco01ddpsmusic-play,
-.profco01ddpsmusic-play:link,
-.profco01ddpsmusic-play:visited,
-.profco01ddpsmusic-play:hover,
-.profco01ddpsmusic-play:active {
+.profco01ddps-stage .profco01ddpsmusic-play,
+.profco01ddps-stage .profco01ddpsmusic-play:link,
+.profco01ddps-stage .profco01ddpsmusic-play:visited,
+.profco01ddps-stage .profco01ddpsmusic-play:hover,
+.profco01ddps-stage .profco01ddpsmusic-play:active {
   width: 44px !important;
   height: 44px !important;
   display: flex !important;
@@ -439,19 +459,33 @@
   border: var(--prof-border) !important;
   border-radius: 50% !important;
   background: var(--prof-button) !important;
-  color: var(--prof-button-text) !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
   text-decoration: none !important;
-  font-size: 14px !important;
+  font-size: 0 !important;
   line-height: 1 !important;
   padding-left: 2px !important;
 }
 
+.profco01ddps-stage .profco01ddpsmusic-play::before {
+  content: "▶" !important;
+  display: block !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  font-size: 20px !important;
+  line-height: 1 !important;
+  text-decoration: none !important;
+  transform: translateX(1px) !important;
+}
+
 .profco01ddpsmusic-line {
   width: 100% !important;
+  min-width: 0 !important;
   display: grid !important;
-  grid-template-columns: 38px minmax(0, 1fr) 38px !important;
+  grid-template-columns: 38px minmax(90px, 1fr) 38px !important;
   align-items: center !important;
   column-gap: 10px !important;
+  overflow: visible !important;
 }
 
 .profco01ddpsmusic-line span {
@@ -463,21 +497,37 @@
   line-height: 1 !important;
   font-weight: 700 !important;
   white-space: nowrap !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
-.profco01ddpsmusic-line span:last-child {
+/* บังคับให้เวลาอยู่ซ้าย-ขวา และเส้นเพลงอยู่กลาง */
+.profco01ddpsmusic-line span:first-of-type {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  text-align: left !important;
+}
+
+.profco01ddpsmusic-line span:last-of-type {
+  grid-column: 3 !important;
+  grid-row: 1 !important;
   text-align: right !important;
 }
 
 .profco01ddpsmusic-progress {
+  grid-column: 2 !important;
+  grid-row: 1 !important;
   width: 100% !important;
-  min-width: 0 !important;
+  min-width: 90px !important;
+  max-width: 100% !important;
   height: 7px !important;
   display: block !important;
   border: var(--prof-border) !important;
   border-radius: 999px !important;
   background: var(--prof-bg) !important;
   overflow: hidden !important;
+  position: relative !important;
+  z-index: 12 !important;
 }
 
 .profco01ddpsmusic-progress div {
@@ -488,43 +538,4 @@
   display: block !important;
   background: var(--prof-button) !important;
   border-radius: 999px !important;
-}
-
-.profco01ddps-nav span {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  height: 56px !important;
-  color: var(--prof-text) !important;
-  font-size: 12px !important;
-  line-height: 1 !important;
-  font-weight: 700 !important;
-}
-
-.profco01ddps-nav {
-  height: 56px !important;
-  min-height: 56px !important;
-  display: grid !important;
-  grid-template-columns: repeat(4, minmax(0, 1fr)) 54px !important;
-  align-items: stretch !important;
-  overflow: visible !important;
-}
-
-.profco01ddps-navitem {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  height: 56px !important;
-  min-height: 56px !important;
-  width: 100% !important;
-  color: var(--prof-text) !important;
-  font-family: "Bai Jamjuree", sans-serif !important;
-  font-size: 12px !important;
-  line-height: 1 !important;
-  font-weight: 700 !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-  text-indent: 0 !important;
-  transform: none !important;
-  position: static !important;
 }
