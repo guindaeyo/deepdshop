@@ -221,7 +221,7 @@
 
 .ddshigherth-tag.left{
   top:51%;
-  left:16%;
+  left:19%;
 }
 
 .ddshigherth-tag.right{
@@ -323,54 +323,40 @@
 
 @media screen and (max-width:768px){
 
-  .ddshigherth-frame{
-    padding:10px;
-  }
-
-  .ddshigherth-pearl{
-    padding-top:170px;
-  }
-
   .ddshigherth-photo-wrap{
-    position:relative;
-    top:auto;
-    left:auto;
-    transform:none;
-    width:82%;
-    max-width:360px;
+    top:31%;
+    left:50%;
+    width:58%;
+    max-width:310px;
     min-width:0;
-    margin:80px auto 0;
-    aspect-ratio:200/150;
-    z-index:3;
+    transform:translateX(-50%) scale(.72);
+    transform-origin:top center;
   }
 
-  .ddshigherth-photo{
-    width:100%;
-    height:100%;
-    max-height:none;
+  .ddshigherth-tag.left{
+    top:44%;
+    left:24%;
+  }
+
+  .ddshigherth-tag.right{
+    top:34%;
+    left:68%;
   }
 
   .ddshigherth-roleplay{
-    margin:28px auto 0;
-    padding:40px 28px 0;
-    max-width:100%;
-    z-index:6;
+    margin-top:128%;
+    padding:35px 26px 0;
+  }
+
+  .ddshigherth-roleplay-text{
+    font-size:13px;
+    line-height:1.75;
   }
 
   .ddshigherth-roleplay:before,
   .ddshigherth-roleplay:after{
-    top:25px;
+    top:22px;
     font-size:34px;
-  }
-
-  .ddshigherth-tag.left{
-    top:455px;
-    left:12%;
-  }
-
-  .ddshigherth-tag.right{
-    top:370px;
-    left:72%;
   }
 
   .ddshigherth-mini-img.top,
@@ -379,9 +365,5 @@
     height:45px;
     aspect-ratio:108/45;
     flex:0 0 108px;
-  }
-
-  .ddshigherth-lower-row{
-    padding:0 18px;
   }
 }
