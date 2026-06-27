@@ -405,6 +405,7 @@
 }
 
 .profco01ddpsmusic-info {
+  margin-top: 10px !important;
   min-width: 0 !important;
   width: 100% !important;
   display: grid !important;
