@@ -323,45 +323,55 @@
 
 @media screen and (max-width:768px){
 
+  .ddshigherth-pearl{
+    padding-top:260px;
+  }
+
   .ddshigherth-photo-wrap{
-    top:31%;
-    left:50%;
-    width:72%;
+    position:relative !important;
+    top:auto !important;
+    left:auto !important;
+    transform:none !important;
+    width:82%;
     max-width:360px;
     min-width:0;
-    transform:translateX(-50%) scale(.82);
-    transform-origin:top center;
-    z-index:3;
+    margin:0 auto 28px;
+    aspect-ratio:200/150;
+  }
+
+  .ddshigherth-photo{
+    height:100%;
+    max-height:none;
   }
 
   .ddshigherth-roleplay{
-    z-index:2;
-    margin-top:118%;
-    padding:20px 26px 0;
-  }
-
-  .ddshigherth-roleplay-text{
-    position:relative;
-    z-index:2;
-    background:transparent;
-    font-size:13px;
-    line-height:1.75;
+    margin:0 auto;
+    padding:35px 28px 0;
+    max-width:100%;
+    z-index:6;
   }
 
   .ddshigherth-roleplay:before,
   .ddshigherth-roleplay:after{
-    top:10px;
+    top:22px;
     font-size:34px;
-    z-index:1;
   }
 
   .ddshigherth-tag.left{
-    top:50%;
-    left:20%;
+    top:505px;
+    left:18%;
   }
 
   .ddshigherth-tag.right{
-    top:36%;
+    top:395px;
     left:70%;
+  }
+
+  .ddshigherth-mini-img.top,
+  .ddshigherth-mini-img.bottom{
+    width:108px;
+    height:45px;
+    flex:0 0 108px;
+    aspect-ratio:108/45;
   }
 }
