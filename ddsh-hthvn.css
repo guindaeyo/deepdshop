@@ -27,7 +27,7 @@
   overflow: hidden;
   padding-bottom: clamp(24px, 4.75vw, 35px);
   background: var(--ddshigherth-bg);
-  color: var(--ddshigherth-black);
+  color: var(--ddshigherth-fontf);
   font-family: "Bai Jamjuree", sans-serif;
   box-sizing: border-box;
 }
@@ -42,7 +42,7 @@
   font-weight: 400;
   font-style: italic;
   line-height: .8;
-  color: var(--ddshigherth-red-soft);
+  color: var(--ddshigherth-maincs);
   z-index: 0;
   pointer-events: none;
   white-space: nowrap;
@@ -159,7 +159,7 @@
   font-size: clamp(26px, 6.79vw, 50px);
   font-style: italic;
   letter-spacing: clamp(1px, .27vw, 2px);
-  color: var(--ddshigherth-red);
+  color: var(--ddshigherth-mainc);
   line-height: .9;
 }
 
@@ -201,8 +201,8 @@
   position: absolute;
   height: clamp(11px, 1.77vw, 13px);
   padding: 1px clamp(6px, 1.22vw, 9px) 0;
-  background: var(--ddshigherth-red);
-  color: var(--ddshigherth-white);
+  background: var(--ddshigherth-mainc);
+  color: var(--ddshigherth-fontfz);
   font-size: clamp(6px, 1.08vw, 8px);
   line-height: clamp(10px, 1.63vw, 12px);
   letter-spacing: clamp(1px, .27vw, 2px);
@@ -250,7 +250,7 @@
   font-family: Georgia, serif;
   font-size: clamp(32px, 6.52vw, 48px);
   line-height: 1;
-  color: var(--ddshigherth-red);
+  color: var(--ddshigherth-mainc);
   opacity: .75;
 }
 
@@ -281,8 +281,8 @@
   flex: 1;
   min-height: 0;
   padding: clamp(8px, 1.36vw, 10px) clamp(10px, 2.17vw, 16px);
-  border: 1px solid var(--ddshigherth-red-line);
-  background: rgba(255,255,255,.96);
+  border: 1px solid var(--ddshigherth-mainc);
+  background: var(--ddshigherth-bg);
 
   display: flex;
   align-items: center;
@@ -294,7 +294,7 @@
   font-size: clamp(10px, 1.77vw, 13px);
   line-height: 1;
   letter-spacing: clamp(1px, .41vw, 3px);
-  color: var(--ddshigherth-red);
+  color: var(--ddshigherth-mainc);
   font-weight: 700;
   text-transform: uppercase;
   white-space: nowrap;
