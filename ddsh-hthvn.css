@@ -66,7 +66,7 @@
 .ddshigherth-top-title {
   position: absolute;
   top: clamp(24px, 6.79vw, 50px);
-  left: 8%;
+  left: 7%;
   font-family: Georgia, serif;
   font-size: clamp(11px, 2.45vw, 18px);
   letter-spacing: clamp(2px, .82vw, 6px);
@@ -77,7 +77,7 @@
 .ddshigherth-side-text {
   position: absolute;
   top: clamp(58px, 16.30vw, 120px);
-  left: 8%;
+  left: 7%;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   font-size: clamp(6px, 1.08vw, 8px);
