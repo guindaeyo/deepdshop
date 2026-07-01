@@ -195,6 +195,7 @@
   background-image: var(--ddshigherth-main-img);
   background-size: cover;
   background-position: center;
+  background-position: var(--ddshigherth-main-pos, center);
 }
 
 .ddshigherth-tag {
