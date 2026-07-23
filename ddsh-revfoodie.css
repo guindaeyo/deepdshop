@@ -538,7 +538,7 @@ label[for="fdpopup-photo-3"] {
 
 .fdpopup-contact-text strong {
   max-width: 200px;
-  margin-top: 1px;
+  margin-top: -3px;
   display: block;
   overflow: hidden;
   font-size: 13px;
