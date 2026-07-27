@@ -270,7 +270,7 @@
   height: 22px;
   right: -75px;
   top: 173px;
-  background: #c3c3c3;
+  background: var(--ddsh-lwlrz-text);
 }
 
 .ddsh-lwlrz-photo-quote {
@@ -307,7 +307,7 @@
 
 .ddsh-lwlrz-photo-quote em {
   padding: 0 5px 1px;
-  background: #bdbdbd;
+  background: var(--ddsh-lwlrz-text);
   color: #fff;
   font-style: normal;
   font-weight: 300;
