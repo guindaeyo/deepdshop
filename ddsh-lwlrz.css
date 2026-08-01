@@ -343,7 +343,7 @@
   padding: 8px 12px;
   border: 1px solid var(--ddsh-lwlrz-line);
   background: rgba(255, 255, 255, 0.2);
-  color: #adadad;
+  color: var(--ddsh-lwlrz-text-dark);
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 15px;
   font-weight: 300;
