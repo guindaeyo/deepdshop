@@ -1,0 +1,709 @@
+.ddsh-revmus-wrap,
+.ddsh-revmus-wrap * {
+  box-sizing: border-box;
+}
+
+.ddsh-revmus-wrap {
+  position: relative;
+  width: min(820px, 100%);
+  min-height: 760px;
+  margin: 30px auto;
+  padding: 62px 70px 55px;
+  background: var(--ddsh-revmus-bg);
+  color: var(--ddsh-revmus-main);
+  font-family: "Bai Jamjuree", sans-serif;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.ddsh-revmus-kicker {
+  position: relative;
+  z-index: 10;
+  margin-left: 42px;
+  margin-bottom: 6px;
+  color: var(--ddsh-revmus-main);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.03em;
+}
+
+.ddsh-revmus-kicker span {
+  margin-left: 3px;
+  color: var(--ddsh-revmus-main);
+  font-family: "Italianno", cursive;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+
+
+.ddsh-revmus-heading {
+  position: relative;
+  z-index: 8;
+  width: 480px;
+  height: 116px;
+  margin-left: -3px;
+  pointer-events: none;
+}
+
+.ddsh-revmus-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--ddsh-revmus-main);
+  font-family: "Anton", sans-serif;
+  font-size: 93px;
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: -0.045em;
+  white-space: nowrap;
+}
+
+.ddsh-revmus-script {
+  position: absolute;
+  z-index: 2;
+  top: 67px;
+  left: 7px;
+  color: var(--ddsh-revmus-main);
+  font-family: "Italianno", cursive;
+  font-size: 49px;
+  font-weight: 400;
+  line-height: 0.8;
+  letter-spacing: 0.02em;
+  transform: rotate(-6deg);
+  text-shadow:
+    -2px -2px 0 var(--ddsh-revmus-bg),
+    2px -2px 0 var(--ddsh-revmus-bg),
+    -2px 2px 0 var(--ddsh-revmus-bg),
+    2px 2px 0 var(--ddsh-revmus-bg);
+}
+
+.ddsh-revmus-subtitle {
+  position: absolute;
+  z-index: 1;
+  top: 75px;
+  left: 39px;
+  color: var(--ddsh-revmus-main);
+  font-family: Arial, sans-serif;
+  font-size: 55px;
+  font-weight: 900;
+  line-height: 0.85;
+  letter-spacing: -0.075em;
+  white-space: nowrap;
+  -webkit-text-stroke: 1px var(--ddsh-revmus-bg);
+  text-shadow:
+    -1px -1px 0 var(--ddsh-revmus-bg),
+    1px -1px 0 var(--ddsh-revmus-bg),
+    -1px 1px 0 var(--ddsh-revmus-bg),
+    1px 1px 0 var(--ddsh-revmus-bg);
+}
+
+.ddsh-revmus-hearts {
+  position: absolute;
+  z-index: 12;
+  top: 74px;
+  right: 67px;
+  width: 185px;
+  height: 112px;
+  transform: rotate(2deg);
+}
+
+.ddsh-revmus-hearts svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.ddsh-revmus-hearts path {
+  fill: var(--ddsh-revmus-bg);
+  stroke: var(--ddsh-revmus-main);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.ddsh-revmus-hearts .ddsh-revmus-heart-inner {
+  fill: none;
+  stroke-width: 1.8;
+}
+
+.ddsh-revmus-hearts text {
+  fill: var(--ddsh-revmus-main);
+  stroke: none;
+  font-family: "Anton", sans-serif;
+  font-size: 13px;
+  text-anchor: middle;
+  letter-spacing: 0.04em;
+}
+
+.ddsh-revmus-hearts .ddsh-revmus-bow {
+  fill: none;
+  stroke: var(--ddsh-revmus-main);
+  stroke-width: 2.8;
+}
+
+.ddsh-revmus-video-frame {
+  position: relative;
+  z-index: 3;
+  display: block;
+  width: min(680px, 100%);
+  height: auto;
+  aspect-ratio: 16 / 9;
+  margin: -3px auto 0;
+  border: 1px solid var(--ddsh-revmus-border);
+  border-radius: 19px;
+  background: var(--ddsh-revmus-bg);
+  overflow: visible;
+}
+
+.ddsh-revmus-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  background: var(--ddsh-revmus-bg);
+  overflow: hidden;
+}
+
+.ddsh-revmus-video::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.03),
+      rgba(0, 0, 0, 0.01)
+    );
+
+  pointer-events: none;
+}
+
+.ddsh-revmus-video iframe {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 18px;
+}
+
+.ddsh-revmus-star {
+  display: block;
+  width: 43px;
+  height: 43px;
+  background: var(--ddsh-revmus-main);
+  clip-path: polygon(
+    50% 0%,
+    61% 34%,
+    100% 43%,
+    68% 62%,
+    65% 100%,
+    42% 70%,
+    4% 81%,
+    25% 50%,
+    0% 22%,
+    39% 31%
+  );
+}
+
+.ddsh-revmus-video-frame::before {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  top: 42%;
+  left: -22px;
+  width: 43px;
+  height: 43px;
+  background: var(--ddsh-revmus-main);
+  clip-path: polygon(
+    50% 0%,
+    61% 34%,
+    100% 43%,
+    68% 62%,
+    65% 100%,
+    42% 70%,
+    4% 81%,
+    25% 50%,
+    0% 22%,
+    39% 31%
+  );
+
+  transform: translateY(-50%) rotate(-8deg);
+}
+
+.ddsh-revmus-star-right {
+  position: absolute;
+  z-index: 5;
+  right: -24px;
+  bottom: 20px;
+  width: 46px;
+  height: 46px;
+  background: var(--ddsh-revmus-main);
+
+  transform: rotate(13deg);
+}
+
+.ddsh-revmus-meta {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 25px;
+  width: 100%;
+  margin-top: 14px;
+  background: var(--ddsh-revmus-bg);
+}
+
+.ddsh-revmus-lyric-area {
+  min-width: 0;
+  background: var(--ddsh-revmus-bg);
+}
+
+.ddsh-revmus-lyric {
+  color: var(--ddsh-revmus-text);
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: 0.045em;
+}
+
+.ddsh-revmus-recommender {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+  background: var(--ddsh-revmus-bg);
+}
+
+.ddsh-revmus-swatches {
+  display: flex;
+  gap: 4px;
+}
+
+.ddsh-revmus-swatches span {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+}
+
+.ddsh-revmus-swatch-primary {
+  background: var(--ddsh-revmus-main);
+}
+
+.ddsh-revmus-swatch-secondary {
+  border: 1px solid var(--ddsh-revmus-border);
+  background: var(--ddsh-revmus-bg);
+}
+
+.ddsh-revmus-recommender-name {
+  color: var(--ddsh-revmus-main);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 0.015em;
+}
+
+.ddsh-revmus-recommender-name span {
+  display: block;
+  color: var(--ddsh-revmus-text);
+  font-size: 8px;
+  font-weight: 400;
+}
+
+.ddsh-revmus-track {
+  min-width: 220px;
+  background: var(--ddsh-revmus-bg);
+  color: var(--ddsh-revmus-main);
+  text-align: right;
+  line-height: 0.92;
+}
+
+.ddsh-revmus-track strong {
+  display: block;
+  color: var(--ddsh-revmus-text);
+  font-family: "Anton", "Bai Jamjuree", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+
+.ddsh-revmus-track span {
+  display: block;
+  margin-top: 6px;
+  color: transparent;
+  font-family: Arial, sans-serif;
+  font-size: 27px;
+  font-weight: 900;
+  letter-spacing: -0.045em;
+  white-space: nowrap;
+  -webkit-text-stroke: 1px var(--ddsh-revmus-main);
+}
+
+.ddsh-revmus-review {
+  position: relative;
+  width: 100%;
+  margin-top: 27px;
+  padding: 22px 24px 20px;
+  border: 1px solid var(--ddsh-revmus-border);
+  border-radius: 13px;
+  background: var(--ddsh-revmus-bg);
+}
+
+.ddsh-revmus-review::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  right: 13px;
+  width: 31px;
+  height: 31px;
+  border: 1px solid var(--ddsh-revmus-border);
+  border-radius: 50%;
+}
+
+.ddsh-revmus-review::after {
+  content: "♡";
+  position: absolute;
+  top: 15px;
+  right: 23px;
+  color: var(--ddsh-revmus-main);
+  font-family: Georgia, serif;
+  font-size: 18px;
+}
+
+.ddsh-revmus-review-title {
+  margin-bottom: 10px;
+  color: var(--ddsh-revmus-main);
+  font-family: "Anton", "Bai Jamjuree", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.ddsh-revmus-review-text {
+  max-width: 92%;
+  color: var(--ddsh-revmus-text);
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.8;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.ddsh-revmus-review-footer {
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px solid var(--ddsh-revmus-border);
+  color: var(--ddsh-revmus-main);
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.12em;
+  opacity: 0.75;
+}
+
+.ddsh-revmus-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  width: 100%;
+  margin-top: 13px;
+  background: var(--ddsh-revmus-bg);
+}
+
+.ddsh-revmus-link {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+  min-height: 52px;
+  padding: 9px 11px;
+  border: 1px solid var(--ddsh-revmus-border);
+  border-radius: 8px;
+  background: var(--ddsh-revmus-bg);
+  color: var(--ddsh-revmus-main);
+  text-decoration: none;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.ddsh-revmus-link:hover {
+  background: var(--ddsh-revmus-main);
+  color: var(--ddsh-revmus-bg);
+  transform: translateY(-2px);
+}
+
+.ddsh-revmus-link-icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 29px;
+  height: 29px;
+  border: 1px solid var(--ddsh-revmus-border);
+  border-radius: 50%;
+  color: var(--ddsh-revmus-main);
+  font-size: 11px;
+  line-height: 1;
+}
+
+.ddsh-revmus-link:hover .ddsh-revmus-link-icon {
+  color: var(--ddsh-revmus-bg);
+}
+
+.ddsh-revmus-link-text {
+  min-width: 0;
+  font-family: "Anton", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0.045em;
+  white-space: nowrap;
+}
+
+.ddsh-revmus-link-text small {
+  display: block;
+  margin-bottom: 2px;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--ddsh-revmus-text);
+}
+
+.ddsh-revmus-progress {
+  position: relative;
+  width: 177px;
+  height: 13px;
+  margin: 27px auto 0;
+  border-radius: 999px;
+  background: var(--ddsh-revmus-bg);
+  border: 1px solid var(--ddsh-revmus-border);
+}
+
+.ddsh-revmus-progress span {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  width: 56px;
+  height: 12px;
+  border: 1px solid var(--ddsh-revmus-border);
+  border-radius: 999px;
+  background: var(--ddsh-revmus-main);
+  transform: translateX(-50%);
+}
+
+
+.ddsh-revmus-credit {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 25px;
+  padding: 7px 12px 8px;
+  background: transparent;
+  font-family: Arial, sans-serif;
+}
+
+.ddsh-revmus-credit span {
+  display: block;
+  width: 11px;
+  height: 10px;
+  overflow: hidden;
+  color: rgba(185, 185, 185, 0.58);
+  font-size: 7px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 0.7px;
+  text-align: left;
+  white-space: nowrap;
+  cursor: help;
+  user-select: none;
+  -webkit-user-select: none;
+  transition:
+    width 0.35s ease,
+    color 0.25s ease;
+}
+
+.ddsh-revmus-credit span::before {
+  content: "✝ deepdeepsleepfranklin";
+  display: block;
+  width: 135px;
+  font-style: italic;
+}
+
+.ddsh-revmus-credit span:hover {
+  width: 135px;
+  color: rgba(215, 215, 215, 0.92);
+}
+
+@media (max-width: 820px) {
+  .ddsh-revmus-wrap {
+    width: 100%;
+
+    padding:
+      clamp(45px, 8vw, 62px)
+      clamp(35px, 8vw, 70px)
+      50px;
+  }
+
+  .ddsh-revmus-heading {
+    width: 73%;
+    height: clamp(85px, 15vw, 116px);
+  }
+
+  .ddsh-revmus-title {
+    font-size: clamp(58px, 11vw, 93px);
+  }
+
+  .ddsh-revmus-script {
+    top: clamp(43px, 8vw, 67px);
+
+    font-size: clamp(32px, 6vw, 49px);
+  }
+
+  .ddsh-revmus-subtitle {
+    top: clamp(49px, 9vw, 75px);
+    left: clamp(23px, 4vw, 39px);
+
+    font-size: clamp(35px, 6.6vw, 55px);
+  }
+
+  .ddsh-revmus-hearts {
+    top: clamp(63px, 9vw, 74px);
+    right: clamp(20px, 6vw, 67px);
+
+    width: clamp(125px, 24vw, 185px);
+  }
+
+  .ddsh-revmus-video-frame {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+
+@media (max-width: 560px) {
+  .ddsh-revmus-wrap {
+    min-height: 0;
+
+    padding: 42px 24px;
+  }
+
+  .ddsh-revmus-kicker {
+    margin-left: 4px;
+
+    font-size: 9px;
+  }
+
+  .ddsh-revmus-kicker span {
+    font-size: 15px;
+  }
+
+  .ddsh-revmus-heading {
+    width: 78%;
+    height: 80px;
+  }
+
+  .ddsh-revmus-title {
+    font-size: clamp(49px, 17vw, 68px);
+  }
+
+  .ddsh-revmus-script {
+    top: clamp(38px, 12vw, 51px);
+    left: 4px;
+
+    font-size: clamp(28px, 9vw, 38px);
+  }
+
+  .ddsh-revmus-subtitle {
+    top: clamp(43px, 13vw, 56px);
+    left: 21px;
+
+    font-size: clamp(29px, 10vw, 40px);
+  }
+
+  .ddsh-revmus-hearts {
+    top: 54px;
+    right: 2px;
+
+    width: clamp(100px, 31vw, 130px);
+    height: auto;
+  }
+
+  .ddsh-revmus-video-frame {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    border-radius: 15px;
+  }
+
+  .ddsh-revmus-video,
+  .ddsh-revmus-video iframe,
+  .ddsh-revmus-video::after {
+    border-radius: 14px;
+  }
+
+  .ddsh-revmus-video-frame::before {
+    left: -14px;
+
+    width: 32px;
+    height: 32px;
+  }
+
+  .ddsh-revmus-star-right {
+    right: -13px;
+    bottom: 12px;
+
+    width: 34px;
+    height: 34px;
+  }
+
+  .ddsh-revmus-meta {
+    grid-template-columns: 1fr;
+    gap: 13px;
+  }
+
+  .ddsh-revmus-track {
+    min-width: 0;
+
+    text-align: left;
+  }
+
+  .ddsh-revmus-track strong {
+    font-size: 24px;
+  }
+
+  .ddsh-revmus-track span {
+    font-size: 23px;
+  }
+
+  .ddsh-revmus-review {
+    padding: 20px 18px 18px;
+  }
+
+  .ddsh-revmus-review-text {
+    max-width: 100%;
+
+    font-size: 14px;
+  }
+
+  .ddsh-revmus-links {
+    grid-template-columns: 1fr;
+  }
+
+  .ddsh-revmus-link {
+    min-height: 50px;
+  }
+}
