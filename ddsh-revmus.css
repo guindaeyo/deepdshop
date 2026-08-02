@@ -351,7 +351,7 @@
 .ddsh-revmus-review {
   position: relative;
   width: 100%;
-  margin-top: 27px;
+  margin-top: 20px;
   padding: 22px 24px 20px;
   border: 1px solid var(--ddsh-revmus-border);
   border-radius: 13px;
@@ -372,7 +372,7 @@
 .ddsh-revmus-review::after {
   content: "♡";
   position: absolute;
-  top: 15px;
+  top: 10px;
   right: 23px;
   color: var(--ddsh-revmus-main);
   font-family: Georgia, serif;
