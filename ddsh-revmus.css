@@ -522,15 +522,15 @@
   transform: translateX(-50%);
 }
 
-
 .ddsh-revmus-credit {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   width: 100%;
-  min-height: 25px;
-  padding: 7px 12px 8px;
+  min-height: 18px;
+  margin-top: 0;
+  padding: 0 12px 8px;
   background: transparent;
   font-family: Arial, sans-serif;
 }
