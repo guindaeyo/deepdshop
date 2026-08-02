@@ -372,7 +372,7 @@
 .ddsh-revmus-review::after {
   content: "♡";
   position: absolute;
-  top: 10px;
+  top: 13px;
   right: 23px;
   color: var(--ddsh-revmus-main);
   font-family: Georgia, serif;
