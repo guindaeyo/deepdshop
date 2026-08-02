@@ -330,9 +330,9 @@
 .ddsh-revmus-track strong {
   display: block;
   color: var(--ddsh-revmus-text);
-  font-family: "Anton", "Bai Jamjuree", sans-serif;
+  font-family:"Anton", "Bai Jamjuree", sans-serif;
   font-size: 28px;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: -0.025em;
 }
 
