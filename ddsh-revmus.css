@@ -420,7 +420,11 @@
   background: var(--ddsh-revmus-bg);
 }
 
-.ddsh-revmus-link {
+.ddsh-revmus-link,
+.ddsh-revmus-link:link,
+.ddsh-revmus-link:visited,
+.ddsh-revmus-link:active,
+.ddsh-revmus-link:focus {
   display: flex;
   align-items: center;
   gap: 9px;
@@ -430,8 +434,10 @@
   border: 1px solid var(--ddsh-revmus-border);
   border-radius: 8px;
   background: var(--ddsh-revmus-bg);
-  color: var(--ddsh-revmus-main);
-  text-decoration: none;
+  color: var(--ddsh-revmus-main) !important;
+  -webkit-text-fill-color: var(--ddsh-revmus-main) !important;
+  text-decoration: none !important;
+  outline: none;
   transition:
     background 0.25s ease,
     color 0.25s ease,
@@ -439,8 +445,10 @@
 }
 
 .ddsh-revmus-link:hover {
-  background: var(--ddsh-revmus-main);
-  color: var(--ddsh-revmus-bg);
+  background: var(--ddsh-revmus-main) !important;
+  color: var(--ddsh-revmus-bg) !important;
+  -webkit-text-fill-color: var(--ddsh-revmus-bg) !important;
+  text-decoration: none !important;
   transform: translateY(-2px);
 }
 
@@ -452,33 +460,44 @@
   height: 29px;
   border: 1px solid var(--ddsh-revmus-border);
   border-radius: 50%;
-  color: var(--ddsh-revmus-main);
+  color: var(--ddsh-revmus-main) !important;
+  -webkit-text-fill-color: var(--ddsh-revmus-main) !important;
   font-size: 11px;
   line-height: 1;
-}
-
-.ddsh-revmus-link:hover .ddsh-revmus-link-icon {
-  color: var(--ddsh-revmus-bg);
+  text-decoration: none !important;
 }
 
 .ddsh-revmus-link-text {
   min-width: 0;
+  color: var(--ddsh-revmus-main) !important;
+  -webkit-text-fill-color: var(--ddsh-revmus-main) !important;
   font-family: "Anton", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.1;
   letter-spacing: 0.045em;
   white-space: nowrap;
+  text-decoration: none !important;
 }
 
 .ddsh-revmus-link-text small {
   display: block;
   margin-bottom: 2px;
+  color: var(--ddsh-revmus-text) !important;
+  -webkit-text-fill-color: var(--ddsh-revmus-text) !important;
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 9px;
   font-weight: 500;
   letter-spacing: 0.08em;
-  color: var(--ddsh-revmus-text);
+  text-decoration: none !important;
+}
+
+.ddsh-revmus-link:hover .ddsh-revmus-link-icon,
+.ddsh-revmus-link:hover .ddsh-revmus-link-text,
+.ddsh-revmus-link:hover .ddsh-revmus-link-text small {
+  color: var(--ddsh-revmus-bg) !important;
+  -webkit-text-fill-color: var(--ddsh-revmus-bg) !important;
+  text-decoration: none !important;
 }
 
 .ddsh-revmus-progress {
