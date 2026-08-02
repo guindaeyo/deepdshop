@@ -523,6 +523,7 @@
 }
 
 .ddsh-revmus-credit {
+  top: -30px;
   position: relative;
   display: flex;
   align-items: flex-start;
