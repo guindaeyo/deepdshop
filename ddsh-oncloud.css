@@ -273,24 +273,30 @@
   color: rgba(215, 215, 215, 0.92);
 }
 
+
 @media (max-width: 600px) {
 
   .ddsh-oncloud {
     width: calc(100% - 20px);
     margin: 0 auto;
-    padding: 12px 10px;
+    padding: 18px 14px 22px;
   }
 
   .ddsh-oncloud-header {
-    min-height: 82px;
+    min-height: 88px;
     padding-bottom: 10px;
   }
 
+  .ddsh-oncloud-heading {
+    max-width: calc(100% - 100px);
+  }
+
   .ddsh-oncloud-title {
-    font-size: clamp(32px, 10vw, 46px);
+    font-size: clamp(24px, 7.2vw, 40px);
     line-height: 0.95;
-    letter-spacing: -1.5px;
-    -webkit-text-stroke: 1.4px #cecece;
+    letter-spacing: -1px;
+    white-space: nowrap;
+    -webkit-text-stroke: 1.3px #cecece;
     text-shadow:
       0.7px 0.7px 0 #cecece,
       -0.7px 0.7px 0 #cecece,
@@ -300,23 +306,25 @@
 
   .ddsh-oncloud-subtitle {
     margin-top: 7px;
-    font-size: 11px;
-    letter-spacing: 0.7px;
+    font-size: 10px;
+    line-height: 1;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
   }
 
   .ddsh-oncloud-deco-left {
     left: -2px;
-    bottom: 24px;
-    width: 65px;
-    height: 55px;
-    transform: scale(0.72);
+    bottom: 27px;
+    width: 70px;
+    height: 58px;
+    transform: scale(0.68);
     transform-origin: left bottom;
   }
 
   .ddsh-oncloud-cloud {
     right: -2px;
-    bottom: 25px;
-    font-size: 38px;
+    bottom: 28px;
+    font-size: 37px;
     -webkit-text-stroke: 0.8px #d0d0d0;
   }
 
@@ -346,7 +354,7 @@
 
   .ddsh-oncloud-note {
     margin-top: 12px;
-    padding: 11px 14px;
+    padding: 12px 14px;
     font-size: 14px;
     line-height: 1.55;
   }
@@ -362,40 +370,47 @@
   }
 }
 
+
 @media (max-width: 400px) {
 
   .ddsh-oncloud {
     width: calc(100% - 14px);
-    padding: 10px 8px;
+    padding: 14px 10px 18px;
   }
 
   .ddsh-oncloud-header {
-    min-height: 72px;
+    min-height: 76px;
     padding-bottom: 8px;
   }
 
+  .ddsh-oncloud-heading {
+    max-width: calc(100% - 82px);
+  }
+
   .ddsh-oncloud-title {
-    font-size: clamp(29px, 9.8vw, 38px);
-    letter-spacing: -1px;
-    -webkit-text-stroke-width: 1.2px;
+    font-size: clamp(21px, 7vw, 28px);
+    line-height: 0.95;
+    letter-spacing: -0.7px;
+    -webkit-text-stroke-width: 1px;
   }
 
   .ddsh-oncloud-subtitle {
     margin-top: 6px;
-    font-size: 10px;
+    font-size: 8.5px;
+    letter-spacing: 0.25px;
   }
 
   .ddsh-oncloud-deco-left {
-    left: -4px;
-    bottom: 20px;
-    transform: scale(0.6);
+    left: -3px;
+    bottom: 22px;
+    transform: scale(0.55);
     transform-origin: left bottom;
   }
 
   .ddsh-oncloud-cloud {
-    right: -3px;
-    bottom: 22px;
-    font-size: 31px;
+    right: -2px;
+    bottom: 23px;
+    font-size: 30px;
   }
 
   .ddsh-oncloud-gallery {
