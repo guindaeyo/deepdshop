@@ -1,5 +1,4 @@
 .ddsh-oncloud {
-  --ddsh-oncloud-bg: #000;
   width: min(700px, calc(100% - 24px));
   margin: 0px auto;
   padding: 25px 40px 35px;
