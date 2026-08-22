@@ -1,8 +1,8 @@
 .ddsh-oncloud {
-  --ddsh-oncloud-bg: #fff;
+  --ddsh-oncloud-bg: #000;
   width: min(700px, calc(100% - 24px));
   margin: 0px auto;
-  padding: 22.5px 22.5px 22.5px;
+  padding: 25px 40px 35px;
   color: #c5c5c5;
   background: var(--ddsh-oncloud-bg);
   box-sizing: border-box;
@@ -36,7 +36,7 @@
 .ddsh-oncloud-title {
   color: #f9f9f9;
   font-family: "Fredoka", sans-serif;
-  font-size: clamp(43px, 8vw, 58px);
+  font-size: clamp(43px, 8vw, 55px);
   font-weight: 500;
   line-height: 0.95;
   letter-spacing: -2px;
