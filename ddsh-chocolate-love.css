@@ -4,7 +4,7 @@
 .ddsh-yoursoul-wrap {
   width: min(650px, calc(100% - 20px));
   margin: 0 auto;
-  padding: 24px 0;
+  padding: 20px 0;
   box-sizing: border-box;
 }
 
@@ -19,6 +19,7 @@
   width: 100%;
   margin: 0 auto;
   padding: 36px 30px 38px;
+  position: relative;
   overflow: hidden;
   color: var(--ddsh-ys-text);
   background: var(--ddsh-ys-bg);
@@ -26,12 +27,10 @@
 }
 
 .ddsh-yoursoul-topnote {
-  width: min(540px, 100%);
-
-  margin-top: 0;
-  margin-right: auto;
-  margin-bottom: 5px;
-  margin-left: max(0px, calc((100% - 560px) / 2));
+  width: min(560px, 100%);
+  margin: 0 auto 9px;
+  position: relative;
+  z-index: 10;
   color: var(--ddsh-ys-line);
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 15px;
@@ -40,93 +39,51 @@
   text-align: left;
 }
 
-.ddsh-yoursoul-visualbox {
-  width: min(450px, 100%);
-  height: 248px;
-  margin-top: 0;
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-left: max(0px, calc((100% - 560px) / 2));
-  position: relative;
-  border: 2px solid var(--ddsh-ys-line);
-  background: rgba(255, 255, 255, 0.16);
-}
-
-.ddsh-yoursoul-miniicon {
-  position: absolute;
-  z-index: 4;
-  top: 36px;
-  left: 170px;
-  color: var(--ddsh-ys-line);
-  text-align: center;
-  line-height: 1;
-}
-
-.ddsh-yoursoul-miniicon span {
-  display: inline-block;
-  font-size: 22px;
-}
-
-.ddsh-yoursoul-miniicon sup {
-  position: relative;
-  top: -7px;
-  margin-left: 2px;
-  font-size: 9px;
-}
-
-.ddsh-yoursoul-miniicon i {
-  display: block;
-  margin-top: 2px;
-  margin-left: 8px;
-  font-size: 11px;
-  font-style: normal;
-}
-
 .ddsh-yoursoul-stickers {
-  width: 250px;
-  position: absolute;
-  z-index: 4;
-  top: 65px;
-  left: 50px;
+  width: min(560px, 100%);
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
 }
 
 .ddsh-yoursoul-stickers span {
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: max-content;
-  max-width: 100%;
-  margin: 0 0 7px;
-  padding: 3px 7px 4px;
+  margin: 0 !important;
+  padding: 3px 8px 4px;
   background: var(--ddsh-ys-tagbg);
   color: var(--ddsh-ys-tagtext);
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 11px;
   font-weight: 600;
   line-height: 1;
-}
-
-.ddsh-yoursoul-stickers span:nth-child(2) {
-  margin-left: 65px;
-}
-
-.ddsh-yoursoul-stickers span:nth-child(3) {
-  margin-left: 13px;
-}
-
-.ddsh-yoursoul-stickers span:nth-child(4) {
-  margin-left: 61px;
+  white-space: nowrap;
 }
 
 .ddsh-yoursoul-stickers span:nth-child(5) {
-  margin-left: 5px;
+  padding: 0;
+  background: transparent;
+  color: var(--ddsh-ys-line);
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .ddsh-yoursoul-photo {
   width: 340px;
   height: 313px;
-  position: absolute;
+  position: relative;
   z-index: 5;
-  top: -30px;
-  right: -100px;
+  margin-top: -70px;
+  margin-right: -15px;
+  margin-bottom: 0;
+  margin-left: auto;
   overflow: visible;
   isolation: isolate;
   transform: rotate(10deg);
@@ -136,10 +93,10 @@
 .ddsh-yoursoul-photo::before {
   content: "";
   width: 520px;
-  height: 470px;
+  height: 420px;
   position: absolute;
   z-index: 0;
-  top: -80px;
+  top: -110px;
   left: -33px;
   border-radius: 50%;
   background:
@@ -157,14 +114,13 @@
   pointer-events: none;
 }
 
-
 .ddsh-yoursoul-photo::after {
   content: "";
   width: 400px;
   height: 380px;
   position: absolute;
   z-index: 0;
-  top: -78px;
+  top: -90px;
   left: 18px;
   border-radius: 50%;
   background:
@@ -176,7 +132,7 @@
       rgba(239, 230, 226, 0.10) 68%,
       rgba(247, 243, 243, 0) 86%
     );
-  
+
   filter: blur(10px);
   pointer-events: none;
 }
@@ -251,7 +207,6 @@
   transform-box: fill-box;
 }
 
-
 .ddsh-yoursoul-frame-outer {
   fill: none;
   stroke: var(--ddsh-ys-line);
@@ -259,7 +214,6 @@
   stroke-linejoin: round;
   stroke-linecap: round;
 }
-
 
 .ddsh-yoursoul-frame-white {
   fill: none;
@@ -280,21 +234,19 @@
 }
 
 .ddsh-yoursoul-titlewrap {
-  width: 530px;
-  position: absolute;
+  width: min(560px, 100%);
+  height: 88px;
+  margin: -106px auto 0;
+  position: relative;
   z-index: 8;
-  left: 50%;
-  bottom: -70px;
-  transform: translateX(-50%);
   pointer-events: none;
 }
-
 
 .ddsh-yoursoul-script {
   width: max-content;
   position: relative;
-  left: 80px;
-  top: -26px;
+  left: -10px;
+  top: 0;
   color: #fffdfb;
   font-family: "Mea Culpa", cursive;
   font-size: 85px;
@@ -310,8 +262,8 @@
 
 .ddsh-yoursoul-pixel {
   width: max-content;
-  margin-top: -31px;
-  margin-left: 190px;
+  margin-top: -5px;
+  margin-left: 100px;
   color: var(--ddsh-ys-line);
   font-family: "Pixelify Sans", sans-serif;
   font-size: 25px;
@@ -324,87 +276,182 @@
 
 .ddsh-yoursoul-face {
   position: absolute;
-  right: 80px;
-  bottom: 1px;
+  right: 208px;
+  bottom: -3px;
   color: var(--ddsh-ys-line);
-
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 12px;
   font-weight: 400;
-
   letter-spacing: 1px;
 }
 
-
-/* ==============================
-   กล่องโรล
-
-   กึ่งกลาง + สูงตามข้อความ
-============================== */
-
 .ddsh-yoursoul-maintext {
   width: min(560px, 100%);
-
   height: auto;
   min-height: 0;
-
-  margin: 82px auto 0;
+  margin: 16px auto 0;
   padding: 14px 20px 16px;
-
   border: 2px solid var(--ddsh-ys-line);
-
   background: rgba(255, 255, 255, 0.18);
   color: var(--ddsh-ys-text);
-
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.6;
-
   text-align: justify;
-
   overflow-wrap: anywhere;
 }
 
-
-/* ==============================
-   หมายเหตุ
-============================== */
-
 .ddsh-yoursoul-notebox {
   width: min(560px, 100%);
-
   margin: 13px auto 0;
   padding: 11px 15px 12px;
-
   border: 2px solid var(--ddsh-ys-line);
-
   background: rgba(255, 255, 255, 0.18);
   color: var(--ddsh-ys-text);
-
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.55;
-
   text-align: left;
 }
 
-
 .ddsh-yoursoul-notehead {
   display: inline;
-
   margin-right: 4px;
-
   color: var(--ddsh-ys-line);
-
   font-weight: 600;
 }
 
+.ddsh-yoursoul-notetext {
+  display: inline;
+}
 
-/* ==============================
-   TABLET
-============================== */
+.ddshopfz-credit {
+  width: 100%;
+  min-height: 25px;
+  margin: -25px auto 0;
+  padding: 0 12px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: static;
+  top: auto;
+  transform: none;
+  background: transparent;
+  font-family: Arial, sans-serif;
+}
+
+.ddshopfz-credit span {
+  width: 11px;
+  height: 10px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  color: rgba(185, 185, 185, 0.58);
+  font-size: 7px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 0.7px;
+  text-align: left;
+  cursor: help;
+  user-select: none;
+  -webkit-user-select: none;
+  transition:
+    width 0.35s ease,
+    color 0.25s ease;
+}
+
+.ddshopfz-credit span::before {
+  content: "✦ deepdeepsleepfranklin";
+  display: block;
+  width: 135px;
+  font-style: italic;
+}
+
+.ddshopfz-credit span:hover {
+  width: 135px;
+  color: rgba(215, 215, 215, 0.92);
+}
+
+
+@media (min-width: 681px) and (max-width: 1024px) {
+
+  .ddsh-yoursoul-wrap {
+    width: min(650px, calc(100% - 30px));
+  }
+
+
+  .ddsh-yoursoul {
+    padding: 34px 28px 36px;
+  }
+
+
+  .ddsh-yoursoul-topnote,
+  .ddsh-yoursoul-stickers,
+  .ddsh-yoursoul-titlewrap,
+  .ddsh-yoursoul-maintext,
+  .ddsh-yoursoul-notebox {
+    width: min(560px, 100%);
+  }
+
+
+  .ddsh-yoursoul-photo {
+    width: 325px;
+    height: 299px;
+
+    margin-top: -64px;
+    margin-right: -5px;
+  }
+
+
+  .ddsh-yoursoul-photo::before {
+    width: 495px;
+    height: 405px;
+
+    top: -104px;
+    left: -38px;
+  }
+
+
+  .ddsh-yoursoul-photo::after {
+    width: 380px;
+    height: 360px;
+
+    top: -86px;
+    left: 11px;
+  }
+
+
+  .ddsh-yoursoul-titlewrap {
+    height: 84px;
+
+    margin-top: -101px;
+  }
+
+
+  .ddsh-yoursoul-script {
+    left: -6px;
+
+    font-size: 81px;
+  }
+
+
+  .ddsh-yoursoul-pixel {
+    margin-top: -5px;
+    margin-left: 96px;
+
+    font-size: 24px;
+  }
+
+
+  .ddsh-yoursoul-face {
+    right: 202px;
+
+    font-size: 11px;
+  }
+
+}
 
 @media (max-width: 680px) {
 
@@ -415,215 +462,280 @@
 
   .ddsh-yoursoul {
     padding:
-      32px
-      clamp(18px, 4.5vw, 28px)
-      34px;
+      30px
+      clamp(18px, 4.5vw, 26px)
+      32px;
   }
 
 
-  .ddsh-yoursoul-topnote {
-    width: min(540px, 100%);
-  }
-
-
-  .ddsh-yoursoul-visualbox {
-    width: min(450px, 100%);
-    height: 248px;
-  }
-
-
+  .ddsh-yoursoul-topnote,
+  .ddsh-yoursoul-stickers,
+  .ddsh-yoursoul-titlewrap,
   .ddsh-yoursoul-maintext,
   .ddsh-yoursoul-notebox {
-    width: min(560px, 100%);
-  }
-}
-
-
-/* ==============================
-   MOBILE
-============================== */
-
-@media (max-width: 560px) {
-
-  .ddsh-yoursoul {
-    padding: 26px 16px 28px;
+    width: 100%;
   }
 
 
   .ddsh-yoursoul-topnote {
-    font-size: 13px;
-  }
-
-
-  .ddsh-yoursoul-visualbox {
-    width: 100%;
-    height: 238px;
-  }
-
-
-  .ddsh-yoursoul-miniicon {
-    top: 36px;
-    left: 27%;
+    font-size: 14px;
   }
 
 
   .ddsh-yoursoul-stickers {
-    width: 130px;
-
-    top: 73px;
-    left: 13px;
+    gap: 7px;
   }
 
 
   .ddsh-yoursoul-stickers span {
-    margin-bottom: 6px;
-    padding: 3px 6px;
+    padding: 3px 7px 4px;
 
-    font-size: 9px;
-  }
-
-
-  .ddsh-yoursoul-stickers span:nth-child(2) {
-    margin-left: 43px;
-  }
-
-
-  .ddsh-yoursoul-stickers span:nth-child(3) {
-    margin-left: 7px;
-  }
-
-
-  .ddsh-yoursoul-stickers span:nth-child(4) {
-    margin-left: 39px;
+    font-size: 10px;
   }
 
 
   .ddsh-yoursoul-stickers span:nth-child(5) {
-    margin-left: 2px;
+    padding: 0;
+
+    font-size: 11px;
   }
 
 
   .ddsh-yoursoul-photo {
-    width: 255px;
-    height: 235px;
+    width: 300px;
+    height: 276px;
 
-    top: -16px;
-    right: -62px;
+    margin-top: -55px;
+    margin-right: -5px;
   }
 
 
   .ddsh-yoursoul-photo::before {
-    width: 390px;
-    height: 350px;
+    width: 455px;
+    height: 380px;
 
-    top: -59px;
-    left: -26px;
+    top: -96px;
+    left: -42px;
 
-    filter: blur(10px);
+    filter: blur(12px);
   }
 
 
   .ddsh-yoursoul-photo::after {
-    width: 300px;
-    height: 285px;
+    width: 350px;
+    height: 330px;
 
-    top: -58px;
-    left: 13px;
+    top: -82px;
+    left: 4px;
 
-    filter: blur(8px);
+    filter: blur(9px);
   }
 
 
   .ddsh-yoursoul-titlewrap {
-    width: 390px;
+    height: 78px;
 
-    bottom: -53px;
+    margin-top: -93px;
   }
 
 
   .ddsh-yoursoul-script {
-    left: 37px;
-    top: -19px;
+    left: -4px;
 
-    font-size: 61px;
+    font-size: 73px;
   }
 
 
   .ddsh-yoursoul-pixel {
-    margin-top: -20px;
-    margin-left: 112px;
+    margin-top: -4px;
+    margin-left: 86px;
 
-    font-size: 18px;
+    font-size: 21px;
   }
 
 
   .ddsh-yoursoul-face {
-    right: 53px;
-    bottom: 1px;
+    right: 36%;
+    bottom: -1px;
 
-    font-size: 9px;
+    font-size: 10px;
   }
 
 
   .ddsh-yoursoul-maintext {
-    width: 100%;
+    margin-top: 14px;
 
-    margin-top: 65px;
-    padding: 12px 14px 14px;
+    padding: 13px 17px 15px;
 
     font-size: 14px;
-    line-height: 1.62;
   }
 
 
   .ddsh-yoursoul-notebox {
-    width: 100%;
-
-    margin-top: 11px;
-    padding: 10px 13px 11px;
-
     font-size: 14px;
   }
 
 }
 
+@media (max-width: 560px) {
 
-/* ==============================
-   MOBILE จอเล็ก
-============================== */
+  .ddsh-yoursoul-wrap {
+    width: calc(100% - 16px);
+    padding: 14px 0;
+  }
 
-@media (max-width: 410px) {
 
   .ddsh-yoursoul {
-    padding: 23px 13px 25px;
+    padding: 25px 16px 27px;
   }
 
 
-  .ddsh-yoursoul-visualbox {
-    height: 220px;
+  .ddsh-yoursoul-topnote {
+    margin-bottom: 7px;
+
+    font-size: 13px;
+  }
+
+  .ddsh-yoursoul-stickers {
+    gap: 4px;
+
+    flex-wrap: nowrap;
   }
 
 
-  .ddsh-yoursoul-miniicon {
-    left: 25%;
+  .ddsh-yoursoul-stickers span {
+    flex: 0 1 auto;
+    min-width: 0;
+    padding: 3px 5px;
+    font-size: 8px;
   }
 
+
+  .ddsh-yoursoul-stickers span:nth-child(5) {
+    padding: 0;
+    font-size: 9px;
+  }
+
+  .ddsh-yoursoul-photo {
+    width: 255px;
+    height: 235px;
+    margin-top: -40px;
+    margin-right: -3px;
+  }
+
+  .ddsh-yoursoul-photo::before {
+    width: 390px;
+    height: 325px;
+    top: -82px;
+    left: -55px;
+
+    filter: blur(10px);
+  }
+
+  .ddsh-yoursoul-photo::after {
+    width: 300px;
+    height: 285px;
+    top: -70px;
+    left: -14px;
+    filter: blur(8px);
+  }
+
+  .ddsh-yoursoul-titlewrap {
+    height: 68px;
+    margin-top: -80px;
+  }
+
+  .ddsh-yoursoul-script {
+    left: -1px;
+
+    font-size: 61px;
+  }
+
+  .ddsh-yoursoul-pixel {
+    margin-top: -3px;
+    margin-left: 72px;
+    font-size: 18px;
+  }
+
+  .ddsh-yoursoul-face {
+    right: 32%;
+    bottom: 0;
+    font-size: 9px;
+  }
+
+  .ddsh-yoursoul-maintext {
+    margin-top: 12px;
+    padding: 12px 14px 14px;
+    font-size: 13.5px;
+    line-height: 1.62;
+  }
+
+  .ddsh-yoursoul-notebox {
+    margin-top: 11px;
+    padding: 10px 13px 11px;
+    font-size: 13.5px;
+  }
+
+  .ddshopfz-credit {
+    margin-top: -21px;
+  }
+
+}
+
+
+@media (max-width: 410px) {
+  .ddsh-yoursoul-wrap {
+    width: calc(100% - 12px);
+  }
+
+
+  .ddsh-yoursoul {
+    padding: 22px 13px 24px;
+  }
+
+
+  .ddsh-yoursoul-topnote {
+    margin-bottom: 6px;
+
+    font-size: 12px;
+  }
+
+
+  .ddsh-yoursoul-stickers {
+    gap: 3px;
+  }
+
+
+  .ddsh-yoursoul-stickers span {
+    padding: 2px 4px;
+
+    font-size: 7.5px;
+  }
+
+
+  .ddsh-yoursoul-stickers span:nth-child(5) {
+    padding: 0;
+
+    font-size: 8px;
+  }
 
   .ddsh-yoursoul-photo {
     width: 225px;
     height: 207px;
 
-    top: -11px;
-    right: -58px;
+    margin-top: -32px;
+    margin-right: -2px;
   }
 
 
   .ddsh-yoursoul-photo::before {
     width: 345px;
-    height: 310px;
+    height: 288px;
 
-    top: -52px;
-    left: -22px;
+    top: -73px;
+    left: -49px;
+
+    filter: blur(9px);
   }
 
 
@@ -631,49 +743,52 @@
     width: 265px;
     height: 250px;
 
-    top: -49px;
-    left: 12px;
+    top: -63px;
+    left: -12px;
+
+    filter: blur(7px);
   }
 
-
   .ddsh-yoursoul-titlewrap {
-    width: 340px;
+    height: 60px;
 
-    bottom: -47px;
+    margin-top: -70px;
   }
 
 
   .ddsh-yoursoul-script {
-    left: 31px;
-    top: -17px;
+    left: 0;
 
-    font-size: 54px;
+    font-size: 53px;
   }
 
 
   .ddsh-yoursoul-pixel {
-    margin-top: -18px;
-    margin-left: 98px;
+    margin-top: -2px;
+    margin-left: 62px;
 
     font-size: 16px;
   }
 
 
   .ddsh-yoursoul-face {
-    right: 44px;
+    right: 29%;
 
     font-size: 8px;
   }
 
-
   .ddsh-yoursoul-maintext {
-    margin-top: 58px;
+    margin-top: 10px;
+
+    padding: 11px 12px 13px;
 
     font-size: 13px;
   }
 
 
   .ddsh-yoursoul-notebox {
+    padding: 9px 12px 10px;
+
     font-size: 13px;
   }
 
