@@ -320,7 +320,7 @@
 .ddshopfz-credit {
   width: min(650px, calc(100% - 20px));
   min-height: 20px;
-  margin: -15px auto 0;
+  margin: -10px auto 0;
   padding: 0 12px 5px;
   display: flex;
   align-items: flex-end;
@@ -366,7 +366,7 @@
 @media (min-width: 681px) and (max-width: 1024px) {
 
   .ddsh-yoursoul-wrap {
-    width: min(650px, calc(100% - 30px));
+    width: min(650px, calc(100% - 24px));
   }
 
   .ddsh-yoursoul {
@@ -384,22 +384,24 @@
   .ddsh-yoursoul-photo {
     width: 325px;
     height: 299px;
-    margin-top: -64px;
-    margin-right: -5px;
+    margin-top: -65px;
+    margin-right: -8px;
   }
 
   .ddsh-yoursoul-photo::before {
-    width: 495px;
-    height: 405px;
-    top: -104px;
+    width: 505px;
+    height: 400px;
+    top: -86px;
     left: -38px;
+    filter: blur(13px);
   }
 
   .ddsh-yoursoul-photo::after {
     width: 380px;
     height: 360px;
     top: -86px;
-    left: 11px;
+    left: 12px;
+    filter: blur(9px);
   }
 
   .ddsh-yoursoul-titlewrap {
@@ -420,20 +422,22 @@
 
   .ddsh-yoursoul-face {
     right: 202px;
+    bottom: -2px;
     font-size: 11px;
   }
 
   .ddshopfz-credit {
-    width: min(650px, calc(100% - 30px));
-    margin-top: -15px;
+    width: min(650px, calc(100% - 24px));
   }
 
 }
+
 
 @media (max-width: 680px) {
 
   .ddsh-yoursoul-wrap {
     width: calc(100% - 20px);
+    padding-top: 18px;
   }
 
   .ddsh-yoursoul {
@@ -449,14 +453,18 @@
   }
 
   .ddsh-yoursoul-topnote {
+    margin-bottom: 8px;
     font-size: 14px;
   }
 
   .ddsh-yoursoul-stickers {
     gap: 7px;
+    flex-wrap: nowrap;
   }
 
   .ddsh-yoursoul-stickers span {
+    flex: 0 1 auto;
+    min-width: 0;
     padding: 3px 7px 4px;
     font-size: 10px;
   }
@@ -474,18 +482,18 @@
   }
 
   .ddsh-yoursoul-photo::before {
-    width: 455px;
-    height: 380px;
-    top: -96px;
-    left: -42px;
+    width: 465px;
+    height: 370px;
+    top: -82px;
+    left: -43px;
     filter: blur(12px);
   }
 
   .ddsh-yoursoul-photo::after {
     width: 350px;
     height: 330px;
-    top: -82px;
-    left: 4px;
+    top: -80px;
+    left: 3px;
     filter: blur(9px);
   }
 
@@ -515,18 +523,21 @@
     margin-top: 14px;
     padding: 13px 17px 15px;
     font-size: 14px;
+    line-height: 1.62;
   }
 
   .ddsh-yoursoul-notebox {
+    margin-top: 12px;
+    padding: 10px 14px 11px;
     font-size: 14px;
   }
 
   .ddshopfz-credit {
     width: calc(100% - 20px);
-    margin-top: -15px;
   }
 
 }
+
 
 @media (max-width: 560px) {
 
@@ -546,7 +557,7 @@
 
   .ddsh-yoursoul-stickers {
     gap: 4px;
-    flex-wrap: nowrap;
+    overflow: hidden;
   }
 
   .ddsh-yoursoul-stickers span {
@@ -569,9 +580,9 @@
   }
 
   .ddsh-yoursoul-photo::before {
-    width: 390px;
-    height: 325px;
-    top: -82px;
+    width: 400px;
+    height: 315px;
+    top: -70px;
     left: -55px;
     filter: blur(10px);
   }
@@ -579,7 +590,7 @@
   .ddsh-yoursoul-photo::after {
     width: 300px;
     height: 285px;
-    top: -70px;
+    top: -68px;
     left: -14px;
     filter: blur(8px);
   }
@@ -621,15 +632,16 @@
 
   .ddshopfz-credit {
     width: calc(100% - 16px);
-    margin-top: -15px;
   }
 
 }
+
 
 @media (max-width: 410px) {
 
   .ddsh-yoursoul-wrap {
     width: calc(100% - 12px);
+    padding-top: 12px;
   }
 
   .ddsh-yoursoul {
@@ -663,9 +675,9 @@
   }
 
   .ddsh-yoursoul-photo::before {
-    width: 345px;
-    height: 288px;
-    top: -73px;
+    width: 350px;
+    height: 280px;
+    top: -63px;
     left: -49px;
     filter: blur(9px);
   }
@@ -673,7 +685,7 @@
   .ddsh-yoursoul-photo::after {
     width: 265px;
     height: 250px;
-    top: -63px;
+    top: -60px;
     left: -12px;
     filter: blur(7px);
   }
@@ -696,6 +708,7 @@
 
   .ddsh-yoursoul-face {
     right: 29%;
+    bottom: 0;
     font-size: 8px;
   }
 
@@ -703,16 +716,17 @@
     margin-top: 10px;
     padding: 11px 12px 13px;
     font-size: 13px;
+    line-height: 1.62;
   }
 
   .ddsh-yoursoul-notebox {
+    margin-top: 10px;
     padding: 9px 12px 10px;
     font-size: 13px;
   }
 
   .ddshopfz-credit {
     width: calc(100% - 12px);
-    margin-top: -15px;
   }
 
 }
