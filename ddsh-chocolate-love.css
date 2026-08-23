@@ -4,7 +4,7 @@
 .ddsh-yoursoul-wrap {
   width: min(650px, calc(100% - 20px));
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 20px 0 0;
   box-sizing: border-box;
 }
 
@@ -92,11 +92,11 @@
 
 .ddsh-yoursoul-photo::before {
   content: "";
-  width: 520px;
+  width: 530px;
   height: 420px;
   position: absolute;
   z-index: 0;
-  top: -110px;
+  top: -90px;
   left: -33px;
   border-radius: 50%;
   background:
@@ -109,7 +109,6 @@
       rgba(247, 243, 243, 0.06) 76%,
       rgba(247, 243, 243, 0) 88%
     );
-
   filter: blur(14px);
   pointer-events: none;
 }
@@ -132,7 +131,6 @@
       rgba(239, 230, 226, 0.10) 68%,
       rgba(247, 243, 243, 0) 86%
     );
-
   filter: blur(10px);
   pointer-events: none;
 }
@@ -142,8 +140,7 @@
   height: 100%;
   position: relative;
   z-index: 1;
-  transform:
-    rotate(var(--ddsh-yoursoul-shape-rotate, 0deg));
+  transform: rotate(var(--ddsh-yoursoul-shape-rotate, 0deg));
   transform-origin: center center;
 }
 
@@ -152,19 +149,16 @@
   height: 100%;
   position: absolute;
   inset: 0;
-  background-image:
-    var(--ddsh-yoursoul-photo);
+  background-image: var(--ddsh-yoursoul-photo);
   background-size: cover;
   background-repeat: no-repeat;
   background-position:
     var(--ddsh-yoursoul-photo-x, 50%)
     var(--ddsh-yoursoul-photo-y, 50%);
-  background-color:
-    var(--ddsh-ys-paper);
+  background-color: var(--ddsh-ys-paper);
 }
 
-.ddsh-yoursoul-heart
-.ddsh-yoursoul-photo-image {
+.ddsh-yoursoul-heart .ddsh-yoursoul-photo-image {
   -webkit-mask-image:
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 380 340'%3E%3Cpath fill='black' d='M173 317C144 303 110 281 81 253C52 225 30 194 24 159C17 118 28 82 54 58C75 39 99 30 123 32C150 34 171 49 182 72C186 81 187 91 187 99C187 106 190 111 196 111C203 111 207 106 208 99C208 88 208 79 212 70C224 45 246 32 272 33C299 35 324 50 339 75C358 105 359 144 346 178C332 214 307 242 280 266C254 289 226 306 204 317C194 322 183 322 173 317Z'/%3E%3C/svg%3E");
   mask-image:
@@ -177,8 +171,7 @@
   mask-size: 100% 100%;
 }
 
-.ddsh-yoursoul-star
-.ddsh-yoursoul-photo-image {
+.ddsh-yoursoul-star .ddsh-yoursoul-photo-image {
   -webkit-mask-image:
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 380 340'%3E%3Cpath fill='black' d='M190 14C194 14 198 17 200 22L231 91C233 96 237 99 242 99L327 106C340 107 345 123 335 132L270 188C266 192 264 198 266 204L286 286C289 299 276 309 265 302L199 259C194 256 186 256 181 259L115 302C104 309 91 299 94 286L114 204C116 198 114 192 110 188L45 132C35 123 40 107 53 106L138 99C143 99 147 96 149 91L180 22C182 17 186 14 190 14Z'/%3E%3C/svg%3E");
   mask-image:
@@ -200,8 +193,7 @@
   pointer-events: none;
 }
 
-.ddsh-yoursoul-star
-.ddsh-yoursoul-star-svg {
+.ddsh-yoursoul-star .ddsh-yoursoul-star-svg {
   transform: scale(1.10);
   transform-origin: center center;
   transform-box: fill-box;
@@ -223,13 +215,11 @@
   stroke-linecap: round;
 }
 
-.ddsh-yoursoul-heart
-.ddsh-yoursoul-star-svg {
+.ddsh-yoursoul-heart .ddsh-yoursoul-star-svg {
   display: none;
 }
 
-.ddsh-yoursoul-star
-.ddsh-yoursoul-heart-svg {
+.ddsh-yoursoul-star .ddsh-yoursoul-heart-svg {
   display: none;
 }
 
@@ -328,16 +318,15 @@
 }
 
 .ddshopfz-credit {
-  width: 100%;
-  min-height: 25px;
-  margin: -25px auto 0;
-  padding: 0 12px 8px;
+  width: min(650px, calc(100% - 20px));
+  min-height: 20px;
+  margin: -15px auto 0;
+  padding: 0 12px 5px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
-  position: static;
-  top: auto;
-  transform: none;
+  position: relative;
+  z-index: 20;
   background: transparent;
   font-family: Arial, sans-serif;
 }
@@ -374,18 +363,15 @@
   color: rgba(215, 215, 215, 0.92);
 }
 
-
 @media (min-width: 681px) and (max-width: 1024px) {
 
   .ddsh-yoursoul-wrap {
     width: min(650px, calc(100% - 30px));
   }
 
-
   .ddsh-yoursoul {
     padding: 34px 28px 36px;
   }
-
 
   .ddsh-yoursoul-topnote,
   .ddsh-yoursoul-stickers,
@@ -395,60 +381,51 @@
     width: min(560px, 100%);
   }
 
-
   .ddsh-yoursoul-photo {
     width: 325px;
     height: 299px;
-
     margin-top: -64px;
     margin-right: -5px;
   }
 
-
   .ddsh-yoursoul-photo::before {
     width: 495px;
     height: 405px;
-
     top: -104px;
     left: -38px;
   }
 
-
   .ddsh-yoursoul-photo::after {
     width: 380px;
     height: 360px;
-
     top: -86px;
     left: 11px;
   }
 
-
   .ddsh-yoursoul-titlewrap {
     height: 84px;
-
     margin-top: -101px;
   }
 
-
   .ddsh-yoursoul-script {
     left: -6px;
-
     font-size: 81px;
   }
-
 
   .ddsh-yoursoul-pixel {
     margin-top: -5px;
     margin-left: 96px;
-
     font-size: 24px;
   }
 
-
   .ddsh-yoursoul-face {
     right: 202px;
-
     font-size: 11px;
+  }
+
+  .ddshopfz-credit {
+    width: min(650px, calc(100% - 30px));
+    margin-top: -15px;
   }
 
 }
@@ -459,14 +436,9 @@
     width: calc(100% - 20px);
   }
 
-
   .ddsh-yoursoul {
-    padding:
-      30px
-      clamp(18px, 4.5vw, 26px)
-      32px;
+    padding: 30px clamp(18px, 4.5vw, 26px) 32px;
   }
-
 
   .ddsh-yoursoul-topnote,
   .ddsh-yoursoul-stickers,
@@ -476,103 +448,82 @@
     width: 100%;
   }
 
-
   .ddsh-yoursoul-topnote {
     font-size: 14px;
   }
-
 
   .ddsh-yoursoul-stickers {
     gap: 7px;
   }
 
-
   .ddsh-yoursoul-stickers span {
     padding: 3px 7px 4px;
-
     font-size: 10px;
   }
 
-
   .ddsh-yoursoul-stickers span:nth-child(5) {
     padding: 0;
-
     font-size: 11px;
   }
-
 
   .ddsh-yoursoul-photo {
     width: 300px;
     height: 276px;
-
     margin-top: -55px;
     margin-right: -5px;
   }
 
-
   .ddsh-yoursoul-photo::before {
     width: 455px;
     height: 380px;
-
     top: -96px;
     left: -42px;
-
     filter: blur(12px);
   }
-
 
   .ddsh-yoursoul-photo::after {
     width: 350px;
     height: 330px;
-
     top: -82px;
     left: 4px;
-
     filter: blur(9px);
   }
 
-
   .ddsh-yoursoul-titlewrap {
     height: 78px;
-
     margin-top: -93px;
   }
 
-
   .ddsh-yoursoul-script {
     left: -4px;
-
     font-size: 73px;
   }
-
 
   .ddsh-yoursoul-pixel {
     margin-top: -4px;
     margin-left: 86px;
-
     font-size: 21px;
   }
-
 
   .ddsh-yoursoul-face {
     right: 36%;
     bottom: -1px;
-
     font-size: 10px;
   }
 
-
   .ddsh-yoursoul-maintext {
     margin-top: 14px;
-
     padding: 13px 17px 15px;
-
     font-size: 14px;
   }
 
-
   .ddsh-yoursoul-notebox {
     font-size: 14px;
+  }
+
+  .ddshopfz-credit {
+    width: calc(100% - 20px);
+    margin-top: -15px;
   }
 
 }
@@ -581,27 +532,22 @@
 
   .ddsh-yoursoul-wrap {
     width: calc(100% - 16px);
-    padding: 14px 0;
+    padding-top: 14px;
   }
-
 
   .ddsh-yoursoul {
     padding: 25px 16px 27px;
   }
 
-
   .ddsh-yoursoul-topnote {
     margin-bottom: 7px;
-
     font-size: 13px;
   }
 
   .ddsh-yoursoul-stickers {
     gap: 4px;
-
     flex-wrap: nowrap;
   }
-
 
   .ddsh-yoursoul-stickers span {
     flex: 0 1 auto;
@@ -609,7 +555,6 @@
     padding: 3px 5px;
     font-size: 8px;
   }
-
 
   .ddsh-yoursoul-stickers span:nth-child(5) {
     padding: 0;
@@ -628,7 +573,6 @@
     height: 325px;
     top: -82px;
     left: -55px;
-
     filter: blur(10px);
   }
 
@@ -647,7 +591,6 @@
 
   .ddsh-yoursoul-script {
     left: -1px;
-
     font-size: 61px;
   }
 
@@ -677,119 +620,99 @@
   }
 
   .ddshopfz-credit {
-    margin-top: -21px;
+    width: calc(100% - 16px);
+    margin-top: -15px;
   }
 
 }
 
-
 @media (max-width: 410px) {
+
   .ddsh-yoursoul-wrap {
     width: calc(100% - 12px);
   }
-
 
   .ddsh-yoursoul {
     padding: 22px 13px 24px;
   }
 
-
   .ddsh-yoursoul-topnote {
     margin-bottom: 6px;
-
     font-size: 12px;
   }
-
 
   .ddsh-yoursoul-stickers {
     gap: 3px;
   }
 
-
   .ddsh-yoursoul-stickers span {
     padding: 2px 4px;
-
     font-size: 7.5px;
   }
 
-
   .ddsh-yoursoul-stickers span:nth-child(5) {
     padding: 0;
-
     font-size: 8px;
   }
 
   .ddsh-yoursoul-photo {
     width: 225px;
     height: 207px;
-
     margin-top: -32px;
     margin-right: -2px;
   }
 
-
   .ddsh-yoursoul-photo::before {
     width: 345px;
     height: 288px;
-
     top: -73px;
     left: -49px;
-
     filter: blur(9px);
   }
-
 
   .ddsh-yoursoul-photo::after {
     width: 265px;
     height: 250px;
-
     top: -63px;
     left: -12px;
-
     filter: blur(7px);
   }
 
   .ddsh-yoursoul-titlewrap {
     height: 60px;
-
     margin-top: -70px;
   }
 
-
   .ddsh-yoursoul-script {
     left: 0;
-
     font-size: 53px;
   }
-
 
   .ddsh-yoursoul-pixel {
     margin-top: -2px;
     margin-left: 62px;
-
     font-size: 16px;
   }
 
-
   .ddsh-yoursoul-face {
     right: 29%;
-
     font-size: 8px;
   }
 
   .ddsh-yoursoul-maintext {
     margin-top: 10px;
-
     padding: 11px 12px 13px;
-
     font-size: 13px;
   }
 
-
   .ddsh-yoursoul-notebox {
     padding: 9px 12px 10px;
-
     font-size: 13px;
+  }
+
+  .ddshopfz-credit {
+    width: calc(100% - 12px);
+    margin-top: -15px;
   }
 
 }
