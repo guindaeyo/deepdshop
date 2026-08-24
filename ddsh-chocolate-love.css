@@ -102,12 +102,12 @@
   background:
     radial-gradient(
       ellipse at center,
-      rgba(166, 140, 131, 0.72) 0%,
-      rgba(186, 163, 155, 0.55) 25%,
-      rgba(210, 191, 184, 0.34) 45%,
-      rgba(226, 212, 207, 0.18) 62%,
-      rgba(247, 243, 243, 0.06) 76%,
-      rgba(247, 243, 243, 0) 88%
+      rgba(var(--ddsh-chocolove-dot-rgb, 166, 140, 131), 0.72) 0%,
+      rgba(var(--ddsh-chocolove-dot-rgb, 166, 140, 131), 0.55) 25%,
+      rgba(var(--ddsh-chocolove-dot-rgb, 166, 140, 131), 0.34) 45%,
+      rgba(var(--ddsh-chocolove-dot-rgb, 166, 140, 131), 0.18) 62%,
+      rgba(var(--ddsh-chocolove-dot-rgb, 166, 140, 131), 0.06) 76%,
+      rgba(var(--ddsh-chocolove-dot-rgb, 166, 140, 131), 0) 88%
     );
   filter: blur(14px);
   pointer-events: none;
@@ -125,11 +125,11 @@
   background:
     radial-gradient(
       ellipse at center,
-      rgba(196, 174, 166, 0.52) 0%,
-      rgba(207, 187, 180, 0.40) 28%,
-      rgba(219, 202, 196, 0.25) 48%,
-      rgba(239, 230, 226, 0.10) 68%,
-      rgba(247, 243, 243, 0) 86%
+      rgba(var(--ddsh-chocolove-dot-rgb, 196, 174, 166), 0.52) 0%,
+      rgba(var(--ddsh-chocolove-dot-rgb, 196, 174, 166), 0.40) 28%,
+      rgba(var(--ddsh-chocolove-dot-rgb, 196, 174, 166), 0.25) 48%,
+      rgba(var(--ddsh-chocolove-dot-rgb, 196, 174, 166), 0.10) 68%,
+      rgba(var(--ddsh-chocolove-dot-rgb, 196, 174, 166), 0) 86%
     );
   filter: blur(10px);
   pointer-events: none;
@@ -150,7 +150,7 @@
   position: absolute;
   inset: 0;
   background-image: var(--ddsh-chocolove-photo);
-  background-size: cover;
+  background-size: var(--ddsh-chocolove-photo-size, cover);
   background-repeat: no-repeat;
   background-position:
     var(--ddsh-chocolove-photo-x, 50%)
