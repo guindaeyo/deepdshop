@@ -140,10 +140,10 @@
   background:
     linear-gradient(
       to bottom,
-      color-mix(in srgb, var(--ddsh-esq-control) 15%, #fff) 0%,
-      color-mix(in srgb, var(--ddsh-esq-control) 56%, #fff) 43%,
-      color-mix(in srgb, var(--ddsh-esq-control) 82%, #000) 51%,
-      var(--ddsh-esq-control) 100%
+      color-mix(in srgb, var(--ddsh-esq-button) 15%, #fff) 0%,
+      color-mix(in srgb, var(--ddsh-esq-button) 56%, #fff) 43%,
+      color-mix(in srgb, var(--ddsh-esq-button) 82%, #000) 51%,
+      var(--ddsh-esq-button) 100%
     );
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.85),
@@ -349,10 +349,10 @@
   background:
     linear-gradient(
       to bottom,
-      color-mix(in srgb, var(--ddsh-esq-control) 20%, #fff) 0%,
-      color-mix(in srgb, var(--ddsh-esq-control) 65%, #fff) 44%,
-      color-mix(in srgb, var(--ddsh-esq-control) 80%, #000) 52%,
-      var(--ddsh-esq-control) 100%
+      color-mix(in srgb, var(--ddsh-esq-button) 20%, #fff) 0%,
+      color-mix(in srgb, var(--ddsh-esq-button) 65%, #fff) 44%,
+      color-mix(in srgb, var(--ddsh-esq-button) 80%, #000) 52%,
+      var(--ddsh-esq-button) 100%
     );
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.8),
@@ -438,11 +438,11 @@
   background:
     radial-gradient(
       circle at 37% 26%,
-      color-mix(in srgb, var(--ddsh-esq-control) 10%, #fff) 0%,
-      color-mix(in srgb, var(--ddsh-esq-control) 38%, #fff) 29%,
-      color-mix(in srgb, var(--ddsh-esq-control) 72%, #fff) 55%,
-      color-mix(in srgb, var(--ddsh-esq-control) 84%, #000) 76%,
-      var(--ddsh-esq-control) 100%
+      color-mix(in srgb, var(--ddsh-esq-button) 10%, #fff) 0%,
+      color-mix(in srgb, var(--ddsh-esq-button) 38%, #fff) 29%,
+      color-mix(in srgb, var(--ddsh-esq-button) 72%, #fff) 55%,
+      color-mix(in srgb, var(--ddsh-esq-button) 84%, #000) 76%,
+      var(--ddsh-esq-button) 100%
     );
   box-shadow:
     inset 0 2px 1px rgba(255, 255, 255, 0.8),
