@@ -3,7 +3,7 @@
   margin: 30px auto 0;
   position: relative;
   box-sizing: border-box;
-  color: var(--ddsh-esq-text);
+  color: var(--ddsh-esq-ui);
   font-family: "Bai Jamjuree", sans-serif;
 }
 
@@ -18,19 +18,19 @@
   padding: 4px;
   position: relative;
   overflow: hidden;
-  border: 1px solid #5f5f5b;
+  border: 1px solid var(--ddsh-esq-line);
   border-radius: 15px 15px 11px 11px;
   background:
     linear-gradient(
       90deg,
-      #9d9d98 0%,
-      #d8d8d4 1.3%,
-      #f4f4f0 3.2%,
-      var(--ddsh-esq-frame) 7%,
-      var(--ddsh-esq-frame) 93%,
-      #f4f4f0 96.8%,
-      #b0b0ab 98.7%,
-      #888883 100%
+      color-mix(in srgb, var(--ddsh-esq-outer) 58%, #000) 0%,
+      color-mix(in srgb, var(--ddsh-esq-outer) 84%, #fff) 1.3%,
+      color-mix(in srgb, var(--ddsh-esq-outer) 32%, #fff) 3.2%,
+      var(--ddsh-esq-outer) 7%,
+      var(--ddsh-esq-outer) 93%,
+      color-mix(in srgb, var(--ddsh-esq-outer) 32%, #fff) 96.8%,
+      color-mix(in srgb, var(--ddsh-esq-outer) 76%, #000) 98.7%,
+      color-mix(in srgb, var(--ddsh-esq-outer) 64%, #000) 100%
     );
   box-shadow:
     0 2px 4px rgba(0, 0, 0, 0.38),
@@ -44,22 +44,22 @@
   height: 52px;
   position: relative;
   overflow: hidden;
-  border: 1px solid #777773;
+  border: 1px solid var(--ddsh-esq-line);
   border-radius: 10px 10px 4px 4px;
   background:
     linear-gradient(
       to bottom,
-      #fafaf8 0%,
-      #ededeb 16%,
-      #d7d7d3 45%,
-      #bdbdb9 52%,
-      #d1d1cd 74%,
-      #c4c4c0 100%
+      color-mix(in srgb, var(--ddsh-esq-title) 18%, #fff) 0%,
+      color-mix(in srgb, var(--ddsh-esq-title) 38%, #fff) 16%,
+      color-mix(in srgb, var(--ddsh-esq-title) 76%, #fff) 45%,
+      color-mix(in srgb, var(--ddsh-esq-title) 82%, #000) 52%,
+      color-mix(in srgb, var(--ddsh-esq-title) 91%, #fff) 74%,
+      color-mix(in srgb, var(--ddsh-esq-title) 87%, #000) 100%
     );
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9),
     inset 0 -1px 0 rgba(0, 0, 0, 0.16),
-    0 1px 0 rgba(255, 255, 255, 0.75);
+    0 1px 0 rgba(255, 255, 255, 0.55);
 }
 
 .ddsh-esq-titlebar::before {
@@ -70,7 +70,7 @@
   right: 122px;
   transform: translateY(-50%);
   overflow: hidden;
-  color: #171717;
+  color: var(--ddsh-esq-ui);
   font-family: Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -86,16 +86,16 @@
   top: 50%;
   left: 11px;
   transform: translateY(-50%);
-  border: 1px solid #52524e;
+  border: 1px solid var(--ddsh-esq-line);
   border-radius: 50%;
   background:
     radial-gradient(
       circle at 35% 24%,
-      #fafafa 0%,
-      #cececa 18%,
-      #92928e 43%,
-      #575754 67%,
-      #2c2c2a 100%
+      color-mix(in srgb, var(--ddsh-esq-app) 15%, #fff) 0%,
+      color-mix(in srgb, var(--ddsh-esq-app) 35%, #fff) 18%,
+      color-mix(in srgb, var(--ddsh-esq-app) 70%, #fff) 43%,
+      var(--ddsh-esq-app) 67%,
+      color-mix(in srgb, var(--ddsh-esq-app) 60%, #000) 100%
     );
   box-shadow:
     inset 0 1px 1px rgba(255, 255, 255, 0.9),
@@ -109,7 +109,7 @@
   position: absolute;
   top: 7px;
   left: 6px;
-  background: #fff;
+  background: var(--ddsh-esq-ui);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M5 7h14v3H9v2h8v3H9v2h10v3H5l4-6-4-7z'/%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M5 7h14v3H9v2h8v3H9v2h10v3H5l4-6-4-7z'/%3E%3C/svg%3E");
   -webkit-mask-size: contain;
@@ -135,18 +135,18 @@
   height: 30px;
   position: relative;
   display: block;
-  border: 1px solid #747470;
+  border: 1px solid var(--ddsh-esq-line);
   border-radius: 4px;
   background:
     linear-gradient(
       to bottom,
-      #fdfdfb 0%,
-      #e6e6e2 43%,
-      #babab6 51%,
-      #e5e5e1 100%
+      color-mix(in srgb, var(--ddsh-esq-control) 15%, #fff) 0%,
+      color-mix(in srgb, var(--ddsh-esq-control) 56%, #fff) 43%,
+      color-mix(in srgb, var(--ddsh-esq-control) 82%, #000) 51%,
+      var(--ddsh-esq-control) 100%
     );
   box-shadow:
-    inset 0 1px 0 #fff,
+    inset 0 1px 0 rgba(255, 255, 255, 0.85),
     inset 0 -1px 0 rgba(0, 0, 0, 0.12),
     0 1px 1px rgba(0, 0, 0, 0.22);
 }
@@ -156,7 +156,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  background: #181818;
+  background: var(--ddsh-esq-ui);
   transform: translate(-50%, -50%);
 }
 
@@ -169,14 +169,14 @@
 .ddsh-esq-win-max::before {
   width: 12px;
   height: 12px;
-  border: 2px solid #181818;
+  border: 2px solid var(--ddsh-esq-ui);
   background: transparent !important;
 }
 
 .ddsh-esq-win-close::before {
   width: 16px;
   height: 16px;
-  background: #181818 !important;
+  background: var(--ddsh-esq-ui) !important;
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 5l14 14M19 5L5 19' stroke='black' stroke-width='2.2'/%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 5l14 14M19 5L5 19' stroke='black' stroke-width='2.2'/%3E%3C/svg%3E");
   -webkit-mask-size: contain;
@@ -190,18 +190,18 @@
   height: 35px;
   position: relative;
   margin-top: 1px;
-  border-top: 1px solid rgba(255, 255, 255, 0.85);
-  border-bottom: 1px solid #858581;
+  border-top: 1px solid color-mix(in srgb, var(--ddsh-esq-menu) 35%, #fff);
+  border-bottom: 1px solid var(--ddsh-esq-line);
   background:
     linear-gradient(
       to bottom,
-      #e7e7e3 0%,
-      #ddddda 48%,
-      #d0d0cc 52%,
-      #d8d8d4 100%
+      color-mix(in srgb, var(--ddsh-esq-menu) 72%, #fff) 0%,
+      color-mix(in srgb, var(--ddsh-esq-menu) 88%, #fff) 48%,
+      color-mix(in srgb, var(--ddsh-esq-menu) 90%, #000) 52%,
+      var(--ddsh-esq-menu) 100%
     );
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
 }
 
 .ddsh-esq-menu::before {
@@ -210,7 +210,7 @@
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
-  color: #181818;
+  color: var(--ddsh-esq-ui);
   font-family: Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -222,46 +222,46 @@
   width: 100%;
   padding: 14px 15px 15px;
   position: relative;
-  border-left: 1px solid rgba(106, 106, 101, 0.45);
-  border-right: 1px solid rgba(106, 106, 101, 0.45);
-  border-bottom: 1px solid rgba(90, 90, 86, 0.72);
+  border-left: 1px solid var(--ddsh-esq-line);
+  border-right: 1px solid var(--ddsh-esq-line);
+  border-bottom: 1px solid var(--ddsh-esq-line);
   border-radius: 0 0 7px 7px;
   background:
     linear-gradient(
       90deg,
-      #bdbdb8 0%,
-      #d0d0cc 1.5%,
-      #e1e1dd 5%,
-      var(--ddsh-esq-frame) 10%,
-      var(--ddsh-esq-frame) 90%,
-      #e0e0dc 95%,
-      #c4c4bf 98.5%,
-      #acaca7 100%
+      color-mix(in srgb, var(--ddsh-esq-main) 72%, #000) 0%,
+      color-mix(in srgb, var(--ddsh-esq-main) 90%, #fff) 1.5%,
+      color-mix(in srgb, var(--ddsh-esq-main) 65%, #fff) 5%,
+      var(--ddsh-esq-main) 10%,
+      var(--ddsh-esq-main) 90%,
+      color-mix(in srgb, var(--ddsh-esq-main) 65%, #fff) 95%,
+      color-mix(in srgb, var(--ddsh-esq-main) 88%, #fff) 98.5%,
+      color-mix(in srgb, var(--ddsh-esq-main) 76%, #000) 100%
     );
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.7),
-    inset 0 -1px 1px rgba(255, 255, 255, 0.35);
+    inset 0 1px 0 rgba(255, 255, 255, 0.55),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.25);
 }
 
 .ddsh-esq-photo-frame {
   width: 100%;
   padding: 14px;
-  border: 1px solid #888884;
+  border: 1px solid var(--ddsh-esq-line);
   border-radius: 20px;
   background:
     linear-gradient(
       135deg,
-      #f4f4f1 0%,
-      #e5e5e1 9%,
-      #cececa 48%,
-      #ddddda 78%,
-      #f1f1ee 100%
+      color-mix(in srgb, var(--ddsh-esq-photo-frame) 35%, #fff) 0%,
+      color-mix(in srgb, var(--ddsh-esq-photo-frame) 65%, #fff) 9%,
+      var(--ddsh-esq-photo-frame) 48%,
+      color-mix(in srgb, var(--ddsh-esq-photo-frame) 84%, #fff) 78%,
+      color-mix(in srgb, var(--ddsh-esq-photo-frame) 35%, #fff) 100%
     );
   box-shadow:
-    inset 0 1px 1px rgba(255, 255, 255, 1),
-    inset 1px 0 1px rgba(255, 255, 255, 0.75),
+    inset 0 1px 1px rgba(255, 255, 255, 0.8),
+    inset 1px 0 1px rgba(255, 255, 255, 0.55),
     inset -1px -1px 1px rgba(0, 0, 0, 0.12),
-    0 1px 0 rgba(255, 255, 255, 0.65);
+    0 1px 0 rgba(255, 255, 255, 0.45);
 }
 
 .ddsh-esq-photo {
@@ -269,22 +269,24 @@
   aspect-ratio: 2 / 1;
   overflow: hidden;
   position: relative;
-  border: 2px solid #5c5c58;
+  border: 2px solid var(--ddsh-esq-line);
   border-radius: 14px;
   background-image: var(--ddsh-esq-image);
   background-size: cover;
-  background-position: var(--ddsh-esq-image-x) var(--ddsh-esq-image-y);
+  background-position:
+    var(--ddsh-esq-image-x)
+    var(--ddsh-esq-image-y);
   background-repeat: no-repeat;
   box-shadow:
-    0 0 0 2px rgba(255, 255, 255, 0.85),
-    0 0 0 4px rgba(143, 143, 138, 0.45),
+    0 0 0 2px color-mix(in srgb, var(--ddsh-esq-photo-frame) 30%, #fff),
+    0 0 0 4px color-mix(in srgb, var(--ddsh-esq-line) 50%, transparent),
     inset 0 0 7px rgba(0, 0, 0, 0.2);
 }
 
 .ddsh-esq-albumtext {
   width: calc(100% - 32px);
   margin: 20px auto 0;
-  color: var(--ddsh-esq-text);
+  color: var(--ddsh-esq-ui);
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -298,21 +300,20 @@
   min-height: 44px;
   margin: 13px auto 17px;
   padding: 9px 12px;
-  border: 1px solid #92928d;
+  border: 1px solid var(--ddsh-esq-line);
   border-radius: 6px;
   background:
     linear-gradient(
       to bottom,
-      rgba(255, 255, 255, 0.58) 0%,
-      rgba(255, 255, 255, 0.25) 45%,
-      rgba(0, 0, 0, 0.025) 100%
-    ),
-    var(--ddsh-esq-inner);
+      color-mix(in srgb, var(--ddsh-esq-note) 58%, #fff) 0%,
+      color-mix(in srgb, var(--ddsh-esq-note) 78%, #fff) 45%,
+      var(--ddsh-esq-note) 100%
+    );
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.92),
+    inset 0 1px 0 rgba(255, 255, 255, 0.65),
     inset 0 -1px 0 rgba(0, 0, 0, 0.08),
-    0 1px 0 rgba(255, 255, 255, 0.55);
-  color: var(--ddsh-esq-soft);
+    0 1px 0 rgba(255, 255, 255, 0.35);
+  color: var(--ddsh-esq-ui);
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -323,7 +324,7 @@
 
 .ddsh-esq-note strong {
   margin-right: 4px;
-  color: var(--ddsh-esq-text);
+  color: var(--ddsh-esq-ui);
   font-weight: 600;
 }
 
@@ -343,19 +344,19 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   overflow: hidden;
-  border: 1px solid #777773;
+  border: 1px solid var(--ddsh-esq-line);
   border-radius: 5px;
   background:
     linear-gradient(
       to bottom,
-      #f8f8f5 0%,
-      #e0e0dc 44%,
-      #b9b9b5 52%,
-      #e8e8e4 100%
+      color-mix(in srgb, var(--ddsh-esq-control) 20%, #fff) 0%,
+      color-mix(in srgb, var(--ddsh-esq-control) 65%, #fff) 44%,
+      color-mix(in srgb, var(--ddsh-esq-control) 80%, #000) 52%,
+      var(--ddsh-esq-control) 100%
     );
   box-shadow:
-    inset 0 1px 0 #fff,
-    0 1px 0 rgba(255, 255, 255, 0.65);
+    inset 0 1px 0 rgba(255, 255, 255, 0.8),
+    0 1px 0 rgba(255, 255, 255, 0.45);
 }
 
 .ddsh-esq-seek-buttons span {
@@ -363,7 +364,7 @@
 }
 
 .ddsh-esq-seek-buttons span + span {
-  border-left: 1px solid #969691;
+  border-left: 1px solid var(--ddsh-esq-line);
 }
 
 .ddsh-esq-seek-buttons span::before {
@@ -371,7 +372,7 @@
   position: absolute;
   inset: 0;
   margin: auto;
-  background: #353532;
+  background: var(--ddsh-esq-ui);
   -webkit-mask-size: contain;
   mask-size: contain;
   -webkit-mask-position: center;
@@ -397,9 +398,9 @@
 .ddsh-esq-seek-line {
   height: 2px;
   flex: 1;
-  background: #71716d;
+  background: var(--ddsh-esq-line);
   box-shadow:
-    0 1px 0 rgba(255, 255, 255, 0.95),
+    0 1px 0 rgba(255, 255, 255, 0.65),
     0 -1px 0 rgba(0, 0, 0, 0.08);
 }
 
@@ -432,19 +433,19 @@
   position: relative;
   display: block;
   flex-shrink: 0;
-  border: 1px solid #858581;
+  border: 1px solid var(--ddsh-esq-line);
   border-radius: 50%;
   background:
     radial-gradient(
       circle at 37% 26%,
-      #ffffff 0%,
-      #f4f4f1 29%,
-      #ddddda 55%,
-      #bcbcb8 76%,
-      #ededeb 100%
+      color-mix(in srgb, var(--ddsh-esq-control) 10%, #fff) 0%,
+      color-mix(in srgb, var(--ddsh-esq-control) 38%, #fff) 29%,
+      color-mix(in srgb, var(--ddsh-esq-control) 72%, #fff) 55%,
+      color-mix(in srgb, var(--ddsh-esq-control) 84%, #000) 76%,
+      var(--ddsh-esq-control) 100%
     );
   box-shadow:
-    inset 0 2px 1px rgba(255, 255, 255, 0.98),
+    inset 0 2px 1px rgba(255, 255, 255, 0.8),
     inset 0 -1px 2px rgba(0, 0, 0, 0.16),
     0 1px 2px rgba(0, 0, 0, 0.18);
 }
@@ -471,7 +472,7 @@
   position: absolute;
   inset: 0;
   margin: auto;
-  background: #30302e;
+  background: var(--ddsh-esq-ui);
   -webkit-mask-size: contain;
   mask-size: contain;
   -webkit-mask-position: center;
@@ -513,12 +514,12 @@
   width: min(95px, 100%);
   height: 5px;
   position: relative;
-  border: 1px solid #858581;
+  border: 1px solid var(--ddsh-esq-line);
   border-radius: 5px;
-  background: #ccccc8;
+  background: var(--ddsh-esq-slider);
   box-shadow:
     inset 0 1px 2px rgba(0, 0, 0, 0.3),
-    0 1px 0 rgba(255, 255, 255, 0.85);
+    0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
 .ddsh-esq-volume-knob {
@@ -528,20 +529,20 @@
   top: 50%;
   left: 48%;
   transform: translate(-50%, -50%);
-  border: 1px solid #858581;
+  border: 1px solid var(--ddsh-esq-line);
   border-radius: 4px;
   background:
     linear-gradient(
       90deg,
-      #b8b8b4 0%,
-      #eeeeeb 27%,
-      #ffffff 50%,
-      #d0d0cc 72%,
-      #aaaaa6 100%
+      color-mix(in srgb, var(--ddsh-esq-slider) 78%, #000) 0%,
+      color-mix(in srgb, var(--ddsh-esq-slider) 65%, #fff) 27%,
+      color-mix(in srgb, var(--ddsh-esq-slider) 25%, #fff) 50%,
+      var(--ddsh-esq-slider) 72%,
+      color-mix(in srgb, var(--ddsh-esq-slider) 75%, #000) 100%
     );
   box-shadow:
     0 1px 2px rgba(0, 0, 0, 0.24),
-    inset 0 1px 0 #fff;
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
 }
 
 .ddsh-esq-speaker {
