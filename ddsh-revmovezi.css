@@ -261,7 +261,7 @@
 
 .ddsh-movie-review {
   width: 100%;
-  padding: 25px;
+  padding: 20px;
   border: 1px solid var(--ddsh-movie-border);
   border-radius: 19px;
   background: var(--ddsh-movie-review);
