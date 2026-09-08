@@ -49,7 +49,7 @@
 
 .ddsh-movie-title {
   margin: 0 0 1px;
-  color: var(--ddsh-movie-subtext);
+  color: var(--ddsh-movie-title);
   font-size: 34px;
   font-weight: 500;
   line-height: 1.15;
@@ -57,7 +57,7 @@
 
 .ddsh-movie-thai {
   margin-top: 5px;
-  color: var(--ddsh-movie-subtext);
+  color: var(--ddsh-movie-meta);
   font-size: 19px;
   font-weight: 400;
   line-height: 1.4;
@@ -65,7 +65,7 @@
 
 .ddsh-movie-meta {
   margin-top: 10px;
-  color: var(--ddsh-movie-subtext);
+  color: var(--ddsh-movie-meta);
   font-size: 21px;
   font-weight: 400;
   line-height: 1.4;
@@ -75,8 +75,7 @@
 .ddsh-movie-meta span {
   display: inline-block;
   margin: 0 7px;
-  color: var(--ddsh-movie-subtext);
-  opacity: 0.8;
+  color: var(--ddsh-movie-accent);
 }
 
 .ddsh-movie-content {
@@ -108,7 +107,8 @@
   justify-content: center;
   border: 1px solid var(--ddsh-movie-border);
   border-radius: 999px;
-  color: var(--ddsh-movie-subtext);
+  background: var(--ddsh-movie-genre-bg);
+  color: var(--ddsh-movie-title);
   font-size: 14px;
   font-weight: 400;
   line-height: 1;
@@ -141,7 +141,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--ddsh-movie-subtext);
+  color: var(--ddsh-movie-title);
   font-size: 19px;
   font-weight: 400;
 }
@@ -154,6 +154,7 @@
 
 .ddsh-movie-rating span:last-child {
   margin-left: 2px;
+  color: var(--ddsh-movie-meta);
   font-size: 16px;
 }
 
@@ -171,17 +172,19 @@
 
 .ddsh-movie-credit {
   margin-bottom: 7px;
-  color: var(--ddsh-movie-subtext);
+  color: var(--ddsh-movie-text);
   font-size: 14.4px;
   font-weight: 400;
   line-height: 1.38;
 }
 
 .ddsh-movie-credit span {
-  font-weight: 400;
+  color: var(--ddsh-movie-accent);
+  font-weight: 500;
 }
 
 .ddsh-movie-credit b {
+  color: var(--ddsh-movie-title);
   font-weight: 700;
 }
 
@@ -203,7 +206,7 @@
 }
 
 .ddsh-movie-section-title span {
-  color: var(--ddsh-movie-subtext);
+  color: var(--ddsh-movie-title);
   font-size: 18px;
   font-weight: 400;
   line-height: 1;
@@ -252,26 +255,27 @@
 }
 
 .ddsh-movie-review-title {
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-top: 40px;
+  margin-bottom: 15px;
 }
 
 .ddsh-movie-review {
   width: 100%;
-  padding: 30px;
+  padding: 25px;
+  border: 1px solid var(--ddsh-movie-border);
   border-radius: 19px;
   background: var(--ddsh-movie-review);
   color: var(--ddsh-movie-review-text);
   font-size: 15.5px;
   font-weight: 400;
   line-height: 1.7;
-  text-align: left;
+  text-align: justify;
 }
 
 .ddsh-movie-quote {
   width: 100%;
   padding: 20px 15px 0;
-  color: var(--ddsh-movie-subtext);
+  color: var(--ddsh-movie-meta);
   font-size: 13px;
   font-weight: 500;
   line-height: 1.35;
@@ -388,16 +392,17 @@
   }
 
   .ddsh-movie-review-title {
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 15px;
   }
 
   .ddsh-movie-review {
-    padding: 30px;
+    padding: 25px;
     border-radius: 19px;
     font-size: clamp(12px, 3.1vw, 15.5px);
     font-weight: 400;
     line-height: 1.7;
+    text-align: justify;
   }
 
   .ddsh-movie-quote {
