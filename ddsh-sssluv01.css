@@ -384,9 +384,22 @@
   line-height: 1.7;
   text-align: justify;
   text-justify: inter-cluster;
-  white-space: pre-line;
+  white-space: normal;
   overflow-wrap: break-word;
   word-break: normal;
+}
+
+.ddsh-sssluv-rptext br {
+  line-height: 1.7;
+}
+
+.ddsh-sssluv-rptext p {
+  margin: 0 0 1.7em;
+  padding: 0;
+}
+
+.ddsh-sssluv-rptext p:last-child {
+  margin-bottom: 0;
 }
 
 .ddsh-sssluv-plus {
@@ -452,9 +465,22 @@
   line-height: 1.7;
   text-align: justify;
   text-justify: inter-cluster;
-  white-space: pre-line;
+  white-space: normal;
   overflow-wrap: break-word;
   word-break: normal;
+}
+
+.ddsh-sssluv-notetext br {
+  line-height: 1.7;
+}
+
+.ddsh-sssluv-notetext p {
+  margin: 0 0 1.7em;
+  padding: 0;
+}
+
+.ddsh-sssluv-notetext p:last-child {
+  margin-bottom: 0;
 }
 
 .ddshcr-ssluv0 {
@@ -625,6 +651,7 @@
   .ddsh-sssluv-rptext {
     font-size: 16px;
     line-height: 1.7;
+    white-space: normal;
   }
 
   .ddsh-sssluv-note {
@@ -638,6 +665,7 @@
     padding: 12px 18px;
     font-size: 16px;
     line-height: 1.7;
+    white-space: normal;
   }
 
   .ddshcr-ssluv0 {
