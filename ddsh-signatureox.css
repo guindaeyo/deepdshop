@@ -35,18 +35,20 @@
   letter-spacing: .2px;
 }
 
-.ddsh-sign-temp {
+.ddsh-sign-topicon {
   display: flex;
   align-items: center;
-  gap: 7px;
-  color: var(--ddsh-sign-text);
-  font-size: 17px;
-  font-weight: 600;
-}
-
-.ddsh-sign-temp i {
+  justify-content: center;
   color: var(--ddsh-sign-red-light);
   font-size: 24px;
+  line-height: 1;
+}
+
+.ddsh-sign-topicon i {
+  display: block;
+  color: inherit;
+  font-size: inherit;
+  line-height: 1;
 }
 
 .ddsh-sign-labels {
@@ -332,11 +334,7 @@
     font-size: 19px;
   }
 
-  .ddsh-sign-temp {
-    font-size: 15px;
-  }
-
-  .ddsh-sign-temp i {
+  .ddsh-sign-topicon {
     font-size: 21px;
   }
 
