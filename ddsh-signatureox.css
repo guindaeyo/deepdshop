@@ -1,0 +1,417 @@
+.ddsh-signature {
+  width: min(650px, calc(100% - 24px));
+  margin: 25px auto;
+  padding: 26px 28px 25px;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1px solid var(--ddsh-sign-border);
+  border-radius: 35px;
+  background: var(--ddsh-sign-bg) !important;
+  color: var(--ddsh-sign-text);
+  font-family: "Bai Jamjuree", sans-serif;
+  box-shadow: 0 14px 35px rgba(0,0,0,.18);
+}
+
+.ddsh-signature *,
+.ddsh-signature *::before,
+.ddsh-signature *::after {
+  box-sizing: border-box;
+}
+
+.ddsh-sign-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+
+.ddsh-sign-greeting {
+  color: var(--ddsh-sign-title);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: .2px;
+}
+
+.ddsh-sign-temp {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--ddsh-sign-text);
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.ddsh-sign-temp i {
+  color: var(--ddsh-sign-red-light);
+  font-size: 24px;
+}
+
+.ddsh-sign-labels {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr .95fr;
+  gap: 18px;
+  margin-bottom: 10px;
+  color: var(--ddsh-sign-muted);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: .5px;
+}
+
+.ddsh-sign-labels span:nth-child(2) {
+  padding-left: 2px;
+}
+
+.ddsh-sign-grid {
+  display: grid;
+  grid-template-columns: 1.06fr .94fr;
+  gap: 18px;
+  align-items: stretch;
+}
+
+.ddsh-sign-player {
+  min-height: 169px;
+  padding: 16px 17px 13px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  background: var(--ddsh-sign-player-bg) !important;
+  color: var(--ddsh-sign-player-text);
+  box-shadow: 0 7px 16px rgba(0,0,0,.12);
+}
+
+.ddsh-sign-songtop {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ddsh-sign-cover {
+  width: 65px;
+  height: 65px;
+  flex: 0 0 65px;
+  overflow: hidden;
+  border-radius: 5px;
+  background-image: var(--ddsh-sign-cover);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 9px rgba(0,0,0,.16);
+}
+
+.ddsh-sign-songinfo {
+  min-width: 0;
+  flex: 1;
+}
+
+.ddsh-sign-songname {
+  max-width: 100%;
+  overflow: hidden;
+  color: var(--ddsh-sign-player-text);
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.15;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.ddsh-sign-artist {
+  max-width: 100%;
+  margin-top: 2px;
+  overflow: hidden;
+  color: var(--ddsh-sign-player-sub);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.ddsh-sign-progress {
+  width: 100%;
+  height: 4px;
+  margin-top: 11px;
+  overflow: visible;
+  position: relative;
+  border-radius: 20px;
+  background: var(--ddsh-sign-progress-bg) !important;
+}
+
+.ddsh-sign-progress-fill {
+  width: 5%;
+  height: 100%;
+  position: relative;
+  border-radius: inherit;
+  background: linear-gradient(
+    90deg,
+    var(--ddsh-sign-red-dark),
+    var(--ddsh-sign-red-light)
+  );
+  animation: ddsh-sign-playing 190s linear infinite;
+}
+
+.ddsh-sign-progress-fill::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 50%;
+  right: -3px;
+  border-radius: 50%;
+  background: var(--ddsh-sign-red);
+  transform: translateY(-50%);
+}
+
+.ddsh-sign-times {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+  color: var(--ddsh-sign-player-sub);
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.ddsh-sign-playerbottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 3px;
+}
+
+.ddsh-sign-playcount {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.ddsh-sign-playcount span {
+  margin-bottom: 3px;
+  color: var(--ddsh-sign-player-sub);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.ddsh-sign-playcount strong {
+  color: var(--ddsh-sign-player-text);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.ddsh-sign-controls {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--ddsh-sign-player-sub);
+  font-size: 19px;
+}
+
+.ddsh-sign-controls i {
+  display: block;
+  line-height: 1;
+}
+
+.ddsh-sign-mainplay {
+  color: var(--ddsh-sign-red);
+  font-size: 34px;
+}
+
+.ddsh-sign-side {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 14px;
+}
+
+.ddsh-sign-note,
+.ddsh-sign-battery {
+  min-height: 77px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 13px 16px;
+  border-radius: 15px;
+  color: var(--ddsh-sign-text);
+  box-shadow: 0 5px 14px rgba(0,0,0,.12);
+}
+
+.ddsh-sign-note {
+  background: var(--ddsh-sign-note-bg) !important;
+}
+
+.ddsh-sign-battery {
+  background: var(--ddsh-sign-battery-bg) !important;
+}
+
+.ddsh-sign-sideicon {
+  width: 47px;
+  height: 47px;
+  flex: 0 0 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--ddsh-sign-icon);
+  border-radius: 8px;
+  color: var(--ddsh-sign-icon);
+  font-size: 26px;
+}
+
+.ddsh-sign-battery .ddsh-sign-sideicon {
+  border-color: var(--ddsh-sign-red-light);
+  color: var(--ddsh-sign-red-light);
+}
+
+.ddsh-sign-sidetext {
+  min-width: 0;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ddsh-sign-sidetext small {
+  margin-bottom: 2px;
+  color: var(--ddsh-sign-muted);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+.ddsh-sign-sidetext span {
+  color: var(--ddsh-sign-icon);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.32;
+}
+
+.ddsh-sign-batterybar {
+  width: 5px;
+  height: 46px;
+  position: relative;
+  overflow: hidden;
+  flex: 0 0 5px;
+  border-radius: 10px;
+  background: var(--ddsh-sign-border);
+}
+
+.ddsh-sign-batterybar i {
+  width: 100%;
+  height: 72%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  border-radius: inherit;
+  background: var(--ddsh-sign-red);
+}
+
+@keyframes ddsh-sign-playing {
+  0% {
+    width: 5%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .ddsh-signature {
+    width: min(100%, calc(100% - 18px));
+    padding: 20px 18px;
+    border-radius: 27px;
+  }
+
+  .ddsh-sign-greeting {
+    font-size: 19px;
+  }
+
+  .ddsh-sign-temp {
+    font-size: 15px;
+  }
+
+  .ddsh-sign-temp i {
+    font-size: 21px;
+  }
+
+  .ddsh-sign-labels {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .ddsh-sign-labels span:nth-child(2) {
+    display: none;
+  }
+
+  .ddsh-sign-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .ddsh-sign-player {
+    min-height: 165px;
+  }
+
+  .ddsh-sign-side {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+  }
+
+  .ddsh-sign-note,
+  .ddsh-sign-battery {
+    min-height: 85px;
+    padding: 11px 12px;
+    gap: 10px;
+  }
+
+  .ddsh-sign-sideicon {
+    width: 40px;
+    height: 40px;
+    flex-basis: 40px;
+    font-size: 21px;
+  }
+
+  .ddsh-sign-sidetext span {
+    font-size: 12px;
+  }
+
+  .ddsh-sign-sidetext small {
+    font-size: 8px;
+  }
+
+  .ddsh-sign-batterybar {
+    display: none;
+  }
+}
+
+@media (max-width: 430px) {
+  .ddsh-sign-side {
+    grid-template-columns: 1fr;
+  }
+
+  .ddsh-sign-cover {
+    width: 58px;
+    height: 58px;
+    flex-basis: 58px;
+  }
+
+  .ddsh-sign-songname {
+    font-size: 19px;
+  }
+
+  .ddsh-sign-artist {
+    font-size: 14px;
+  }
+
+  .ddsh-sign-note,
+  .ddsh-sign-battery {
+    min-height: 72px;
+  }
+}
