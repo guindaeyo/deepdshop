@@ -408,4 +408,31 @@
   .ddshcr-ccyword span:hover {
     width: 110px;
   }
+
+  
+.pos-deepshop-autumn-card .ddsh-syre a.ddsh-syre-pill,
+.pos-deepshop-autumn-card .ddsh-syre .ddsh-syre-pill,
+.ddsh-syre a.ddsh-syre-pill {
+  background: linear-gradient(
+    180deg,
+    var(--syre-pill-top, #ffffff) 0%,
+    var(--syre-pill-middle, #fde5f9) 35%,
+    var(--syre-pink, #f6b5ee) 100%
+  ) !important;
+  color: var(--syre-text, #171717) !important;
+  border: 1.5px solid var(--syre-border, #171717) !important;
+  text-decoration: none !important;
+}
+
+.pos-deepshop-autumn-card .ddsh-syre a.ddsh-syre-pill:hover,
+.ddsh-syre a.ddsh-syre-pill:hover {
+  background: linear-gradient(
+    180deg,
+    var(--syre-pill-top, #ffffff) 0%,
+    var(--syre-pill-middle, #fde5f9) 35%,
+    var(--syre-pink, #f6b5ee) 100%
+  ) !important;
+  filter: brightness(1.04);
+  transform: translateY(-2px);
+}
 }
