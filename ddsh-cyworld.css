@@ -1,0 +1,348 @@
+
+.ddsh-syre {
+  --syre-photo-width: 215px;
+  --syre-frame-height: 280px;
+
+  width: min(630px, 100%);
+  margin: 25px auto;
+  padding: 12px;
+  box-sizing: border-box;
+  background: var(--syre-bg);
+  border-radius: 15px;
+  color: var(--syre-text);
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 15px;
+}
+
+.ddsh-syre *,
+.ddsh-syre *::before,
+.ddsh-syre *::after {
+  box-sizing: border-box;
+}
+
+.ddsh-syre a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.ddsh-syre-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  background: var(--syre-window);
+  border: 1.5px solid var(--syre-border);
+  border-radius: 13px;
+  margin-bottom: 16px;
+}
+
+.ddsh-syre-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 50px;
+  padding: 10px 14px;
+  border: 1.5px solid var(--syre-border);
+  border-radius: 40px;
+  background: linear-gradient(
+    180deg,
+    var(--syre-pill-top) 0%,
+    var(--syre-pill-middle) 35%,
+    var(--syre-pink) 100%
+  );
+  font-family: "DotGothic16", sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  transition: filter .2s ease, transform .2s ease;
+}
+
+.ddsh-syre-pill:hover {
+  filter: brightness(1.04);
+  transform: translateY(-2px);
+}
+
+.ddsh-syre-brand {
+  flex: 1;
+  min-width: 0;
+}
+
+.ddsh-syre-folder {
+  flex: 0 0 108px;
+}
+
+.ddsh-syre-folder i {
+  font-size: 19px;
+}
+
+.ddsh-syre-window {
+  padding: 12px 10px 14px;
+  background: linear-gradient(
+    180deg,
+    var(--syre-window) 0%,
+    var(--syre-green-top) 37%,
+    var(--syre-green) 100%
+  );
+  border: 1.5px solid var(--syre-border);
+  border-radius: 13px;
+  margin-bottom: 16px;
+}
+
+.ddsh-syre-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 17px;
+}
+
+.ddsh-syre-user {
+  min-width: 0;
+  width: var(--syre-photo-width);
+  flex: 0 0 var(--syre-photo-width);
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 8px 12px;
+  border: 1.5px solid var(--syre-border);
+  border-radius: 50px;
+  background: linear-gradient(
+    180deg,
+    var(--syre-user-top) 0%,
+    var(--syre-blue) 100%
+  );
+  font-family: "DotGothic16", sans-serif;
+  font-size: 18px;
+}
+
+.ddsh-syre-user span {
+  font: inherit;
+}
+
+.ddsh-syre-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ddsh-syre-controls span {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--syre-control-bg);
+  border: 1.5px solid var(--syre-border);
+  border-radius: 5px;
+  font-size: 19px;
+}
+
+.ddsh-syre-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: -16px;
+}
+
+.ddsh-syre-photo {
+  width: var(--syre-photo-width);
+  flex: 0 0 var(--syre-photo-width);
+  height: var(--syre-frame-height);
+  margin-top: 12px;
+  border: 1.5px solid var(--syre-border);
+  border-radius: 9px;
+  overflow: hidden;
+  background: var(--syre-window);
+}
+
+.ddsh-syre-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.ddsh-syre-rp {
+  flex: 1;
+  min-width: 0;
+}
+
+.ddsh-syre-rpbox {
+  position: relative;
+  width: 100%;
+  padding-top: 12px;
+}
+
+.ddsh-syre-rplabel {
+  position: absolute;
+  top: -8px;
+  left: 10px;
+  z-index: 2;
+  padding: 0 6px;
+  background: transparent;
+  color: var(--syre-text);
+  font-family: "DotGothic16", sans-serif;
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+.ddsh-syre-rplabel i {
+  font-size: 9px;
+  margin-right: 3px;
+}
+
+.ddsh-syre-rptext {
+  width: 100%;
+  height: var(--syre-frame-height);
+  padding: 15px 14px;
+  background: var(--syre-rp-bg);
+  border: 1.5px solid var(--syre-border);
+  border-radius: 8px;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.75;
+  text-align: justify;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overflow-wrap: anywhere;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.ddsh-syre-rptext::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.ddsh-syre-rptext p {
+  margin: 0 0 14px;
+}
+
+.ddsh-syre-rptext p:last-child {
+  margin-bottom: 0;
+}
+
+.ddsh-syre-bottom {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 11px 20px;
+  background: var(--syre-window);
+  border: 1.5px solid var(--syre-border);
+  border-radius: 13px;
+}
+
+.ddsh-syre-music {
+  flex: 1;
+  min-width: 0;
+}
+
+.ddsh-syre-link {
+  flex: 0 0 170px;
+}
+
+.ddsh-syre-bottom i {
+  font-size: 19px;
+}
+
+@media (max-width: 560px) {
+  .ddsh-syre {
+    --syre-photo-width: 140px;
+    --syre-frame-height: 245px;
+    padding: 8px;
+  }
+
+  .ddsh-syre-top {
+    gap: 6px;
+    padding: 6px;
+    margin-bottom: 12px;
+  }
+
+  .ddsh-syre-pill {
+    min-height: 37px;
+    padding: 7px 8px;
+    font-size: 13px;
+    gap: 5px;
+  }
+
+  .ddsh-syre-folder {
+    flex-basis: 65px;
+  }
+
+  .ddsh-syre-folder i {
+    font-size: 14px;
+  }
+
+  .ddsh-syre-window {
+    padding: 9px 7px 11px;
+    margin-bottom: 12px;
+  }
+
+  .ddsh-syre-toolbar {
+    gap: 5px;
+    margin-bottom: 14px;
+  }
+
+  .ddsh-syre-user {
+    min-height: 36px;
+    padding: 6px;
+    font-size: 13px;
+  }
+
+  .ddsh-syre-controls {
+    gap: 5px;
+  }
+
+  .ddsh-syre-controls span {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+
+  .ddsh-syre-content {
+    gap: 6px;
+    margin-top: -7px;
+  }
+
+  .ddsh-syre-rplabel {
+    top: -7px;
+    left: 8px;
+    font-size: 9px;
+    padding: 0 5px;
+  }
+
+  .ddsh-syre-rplabel i {
+    font-size: 7px;
+  }
+
+  .ddsh-syre-rptext {
+    padding: 11px 10px;
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+  .ddsh-syre-bottom {
+    padding: 8px;
+    gap: 7px;
+  }
+
+  .ddsh-syre-link {
+    flex-basis: 95px;
+  }
+
+  .ddsh-syre-bottom i {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 380px) {
+  .ddsh-syre {
+    --syre-photo-width: 110px;
+    --syre-frame-height: 205px;
+  }
+}
