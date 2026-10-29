@@ -1,10 +1,9 @@
-
 .ddsh-syre {
   --syre-photo-width: 215px;
   --syre-frame-height: 280px;
 
   width: min(630px, 100%);
-  margin: 25px auto;
+  margin: 25px auto 0;
   padding: 12px;
   box-sizing: border-box;
   background: var(--syre-bg);
@@ -250,6 +249,50 @@
   font-size: 19px;
 }
 
+.ddshcr-ccyword {
+  width: min(630px, 100%);
+  height: 13px;
+  margin: 5px auto 25px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  z-index: 5;
+  background: transparent;
+  font-family: Arial, sans-serif;
+}
+
+.ddshcr-ccyword span {
+  width: 11px;
+  height: 10px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #999999;
+  font-size: 7px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: .7px;
+  text-align: left;
+  font-style: italic;
+  cursor: help;
+  user-select: none;
+  -webkit-user-select: none;
+  transition:
+    width .35s ease,
+    color .25s ease;
+}
+
+.ddshcr-ccyword span::before {
+  content: "✦ deepdeepsleepfranklin";
+  display: block;
+}
+
+.ddshcr-ccyword span:hover {
+  width: 110px;
+  color: #999999;
+}
+
 @media (max-width: 560px) {
   .ddsh-syre {
     --syre-photo-width: 140px;
@@ -338,11 +381,31 @@
   .ddsh-syre-bottom i {
     font-size: 14px;
   }
+
+  .ddshcr-ccyword {
+    width: calc(100% - 16px);
+    height: 13px;
+    margin: 5px auto 20px;
+  }
+
+  .ddshcr-ccyword span {
+    font-size: 7px;
+  }
 }
 
 @media (max-width: 380px) {
   .ddsh-syre {
     --syre-photo-width: 110px;
     --syre-frame-height: 205px;
+  }
+
+  .ddshcr-ccyword {
+    width: calc(100% - 16px);
+    margin-top: 5px;
+    margin-bottom: 18px;
+  }
+
+  .ddshcr-ccyword span:hover {
+    width: 110px;
   }
 }
